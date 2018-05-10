@@ -1,23 +1,22 @@
-<!-- A basic layout with minimal header and footer -->
+<!-- A basic layout with minimal header -->
+<!-- Use this template for pages about the prototypes, not the prototypes themselves -->
 
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   {% include head.html %}
 
-  <body>
-
-    <!-- {% include banners/warning.html %} -->
+  <body class="prototype">
 
     {% include header-basic.html %}
-
-    {{ content }}
-
-    <!-- {% include footer-basic.html %} -->
+    <div class="wrapper">
+      <div class="col-wrap">
+          <div class="col col--md-two-thirds col--lg-two-thirds">
+              {{ content }}
+          </div>
+      </div>
+    </div>
 
   </body>
-
-  <script type="text/javascript" src="https://cdn.ons.gov.uk/sixteens/1f354a7/js/main.js"></script>
-  <script type="text/javascript" src="https://www.ons.gov.uk/js/app.js"></script>
 
 </html>

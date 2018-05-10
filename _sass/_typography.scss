@@ -1,10 +1,40 @@
+
+
+  h1,h2,h3,h4,h5,h6,
+  .heading-xlarge,.heading-large, .heading-medium, .heading-small, .heading-xsmall, .heading-xxsmall {
+    font-weight: bold;
+  }
+
+  p,li,address {
+    font-size: 16px;
+    line-height: 24px;
+    @media (min-width: 768px) {
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+
+  ul {
+    padding-left: 40px;
+  }
+
+  li {
+    margin:0;
+    padding:0;
+  }
+
 // Font weights
 .font-weight--bold {
-  font-weight: bold !important; // Only use !important in the prototype to temporarily overwrite production styles
+  font-weight: bold; // Only use !important in the prototype to temporarily overwrite production styles
 }
 
 .font-weight--normal {
   font-weight: normal;
+}
+
+// Links
+a {
+  text-decoration: underline;
 }
 
 // Font sizes
@@ -28,64 +58,14 @@
   line-height: 1.5;
 }
 
-
 .text {
   max-width: 30em;
 }
-
-// h2 {
-//   line-height: 1.4 !important; // Only use !important in the prototype to temporarily overwrite production styles
-// }
-//
-// h3 {
-//   line-height: 1.4 !important; // Only use !important in the prototype to temporarily overwrite production styles
-// }
-
-// Custom styles created for the "basic" template
-.basic {
-  h1,h2,h3,h4,h5,h6 {
-    font-weight: bold;
-    padding: 0;
-    margin: 40px 0 24px 0;
-    line-height: 1.2;
-  }
-
-  ul,ol {
-    margin: 0;
-    padding-left: 30px;
-    margin: 8px 0 24px 0;
-  }
-
-  p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 8px 0 24px 0;
-    padding: 0;
-  }
-
-  li {
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0 0 8px 0;
-    padding: 0;
-  }
-
-  .page-intro__content, .lede {
-    font-size: 21px;
-  }
-}
-
-// Styles created for sprint 9 "visual article interation #2004" Oct 2017
 
   .visual-article-interation, .bulletin-iteration {
 
   .breadcrumb {
     padding-bottom: 8px;
-  }
-
-  h1,h2,h3,h4,h5,h6,
-  .heading-xlarge,.heading-large, .heading-medium, .heading-small, .heading-xsmall, .heading-xxsmall {
-    font-weight: bold;
   }
 
   h1, .heading-xlarge, .font-xlarge {
@@ -141,30 +121,6 @@
       font-size: 16px;
       line-height: 32px;
     }
-  }
-
-
-  p,li,address {
-    font-size: 16px;
-    line-height: 24px;
-    @media (min-width: 768px) {
-      font-size: 18px;
-      line-height: 32px;
-    }
-
-  }
-
-ul {
-  padding-left: 40px;
-}
-
-li {
-  margin:0;
-  padding:0;
-}
-
-a {
-    text-decoration: underline;
   }
 
   .page-intro__content {
