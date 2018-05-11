@@ -4,7 +4,7 @@
 }
 
 .basic a:visited {
-  color: $census;
+  color: $indigo;
 }
 
 // Add underline
@@ -17,13 +17,13 @@
 
 // A dirty pattern library class to force the visited style onto links
 .visited {
-  color: $census !important;
+  color: $indigo !important;
 }
 
 .js-hover-click .background--gallery a:visited,
 .background--mercury.js-hover-click a:visited,
 .page-content a:visited {
-  color: $census;
+  color: $indigo;
 }
 
 .section__content--markdown .btn:visited {

@@ -1,31 +1,61 @@
+// Reset
 
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
 
-  h1,h2,h3,h4,h5,h6,
-  .heading-xlarge,.heading-large, .heading-medium, .heading-small, .heading-xsmall, .heading-xxsmall {
-    font-weight: bold;
+// Variables
+
+$spacing-unit: 8px;
+
+// Vertical rhythm
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, svg, %vertical-rhythm {
+  margin-bottom: $spacing-unit*2;
+  line-height: 1.5;
+}
+
+// Headings
+
+.heading-xlarge,
+.heading-large,
+.heading-medium,
+.heading-small,
+.heading-xsmall,
+.heading-xxsmall,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-top: $spacing-unit*2;
+  font-weight: bold;
+}
+
+// Base font size
+address,li,p {
+  font-size: 16px;
+  margin-bottom: $spacing-unit*4;
+  @media (min-width: 768px) {
+    font-size: 18px;
   }
+}
 
-  p,li,address {
-    font-size: 16px;
-    line-height: 24px;
-    @media (min-width: 768px) {
-      font-size: 18px;
-      line-height: 32px;
-    }
-  }
-
-  ul {
-    padding-left: 40px;
-  }
-
-  li {
-    margin:0;
-    padding:0;
-  }
+// Lists
+ul,ol {
+  margin-bottom: $spacing-unit*4;
+  padding-left: $spacing-unit*2;
+}
+li {
+  margin: 0;
+  padding: 0;
+}
 
 // Font weights
 .font-weight--bold {
-  font-weight: bold; // Only use !important in the prototype to temporarily overwrite production styles
+  font-weight: bold;
 }
 
 .font-weight--normal {
@@ -37,178 +67,63 @@ a {
   text-decoration: underline;
 }
 
-// Font sizes
-.font-size--xlarge {
-  font-size: 50px;
-  line-height: 1.2;
+.font-xlarge,
+.heading-xlarge,
+h1 {
+  font-size: 32px;
+  @media (min-width: 768px) {
+    font-size: 38px;
+  }
 }
 
-.font-size--19 {
-  font-size: 19px;
-  line-height: 1.5;
-}
-
-.font-size--21 {
-  font-size: 21px;
-  line-height: 1.5;
-}
-
-.font-size--24 {
+.font-large,
+.heading-large,
+h2 {
   font-size: 24px;
-  line-height: 1.5;
+  @media (min-width: 768px) {
+    font-size: 30px;
+  }
 }
 
-.text {
-  max-width: 30em;
-}
-
-  .visual-article-interation, .bulletin-iteration {
-
-  .breadcrumb {
-    padding-bottom: 8px;
-  }
-
-  h1, .heading-xlarge, .font-xlarge {
-    font-size: 32px;
-    line-height: 40px;
-    @media (min-width: 768px) {
-      font-size: 38px;
-      line-height: 48px;
-    }
-  }
-
-  h2, .heading-large, .font-large {
+.font-medium,
+.heading-medium,
+h3 {
+  font-size: 18px;
+  @media (min-width: 768px) {
     font-size: 24px;
-    line-height: 32px;
-    @media (min-width: 768px) {
-      font-size: 30px;
-      line-height: 40px;
-    }
   }
+}
 
-  h3, .heading-medium, .font-medium {
-    font-size: 18px;
-    line-height: 24px;
-    @media (min-width: 768px) {
-      font-size: 24px;
-      line-height: 32px;
-    }
-  }
-
-  h4, .heading-small .font-small {
-    font-size: 16px;
-    line-height: 24px;
-    @media (min-width: 768px) {
-      font-size: 20px;
-      line-height: 24px;
-    }
-  }
-
-
-  h5, .heading-xsmall {
-    font-size: 16px;
-    line-height: 24px;
-    @media (min-width: 768px) {
-      font-size: 18px;
-      line-height: 32px;
-    }
-  }
-
-  h6, .heading-xxsmall {
-    font-size: 14px;
-    line-height: 24px;
-    @media (min-width: 768px) {
-      font-size: 16px;
-      line-height: 32px;
-    }
-  }
-
-  .page-intro__content {
+.font-small,
+.heading-small,
+h4 {
+  font-size: 16px;
+  @media (min-width: 768px) {
     font-size: 20px;
-    line-height: 32px;
-    @media (min-width: 768px) {
-      font-size: 24px;
-      line-height: 32px;
-    }
-
   }
+}
 
-  .font-xsmall {
+.font-xsmall,
+.heading-xsmall,
+h5 {
+  font-size: 16px;
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+.font-xxsmall,
+.heading-xxsmall,
+h6 {
+  font-size: 14px;
+  @media (min-width: 768px) {
     font-size: 14px;
-    line-height: 24px;
-    @media (min-width: 768px) {
-      font-size: 16px;
-      line-height: 24px;
-    }
-
   }
-
-  .font-xxsmall {
-    font-size: 14px;
-    line-height: 24px;
-    @media (min-width: 768px) {
-      font-size: 14px;
-      line-height: 24px;
-    }
-
-  }
-
-}
-
-// Flexbox grid for the bulletin design sprint
-
-.flex-grid {
-  display: flex;
-}
-.flex-col {
-  flex: 1;
-  margin-right: 16px;
-}
-
-.flex-col:last-child {
-  margin-right: 0;
 }
 
 // Section contents for the bulletin design sprint
-
 ul.section-contents {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
-
-// Custom styles created for the "social media" section
-
-  .heading1 {
-    font-weight: 700;
-    font-size: 52px !important;
-    margin-top: -8px !important;
-  }
-
-  .heading2 {
-    font-weight: 700;
-    font-size: 42px !important;
-  }
-
-  .heading3 {
-    font-weight: 700;
-    font-size: 32px !important;
-  }
-
-  .subheadings {
-    font-weight: 600;
-    font-size: 26px !important;
-    padding-bottom: 24px !important;
-  }
-
-  .body-text {
-    font-weight: 400;
-    font-size: 22px !important;
-    padding-bottom: 24px !important;
-  }
-
-  .source-text {
-    font-weight: 400;
-    font-size: 18px !important;
-  }

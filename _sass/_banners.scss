@@ -1,56 +1,6 @@
-.banner p {
-  margin:0;
-}
-
-.banner a {
-  color: $ship-grey;
-  text-decoration: underline;
-}
-
-.banner a.btn {
-  color: $white;
-  text-decoration: none;
-  padding: 4px 10px 6px;
-  margin-left: 4px;
-}
-
-.banner .icon {
-  vertical-align: middle;
-}
-
-.banner .link--matisse {
-  color: $matisse;
-}
-
-.banner .link--white {
-  color: $white;
-}
-
 .banner__tag {
   padding: 2px 7px 3px;
   text-transform: uppercase;
   color: $white;
   background-color: $thunder;
-}
-
-.banner__tag--sentance-case {
-  text-transform: none;
-}
-
-.banner__tag--white {
-  color: $astral;
-  background-color: $white;
-}
-
-.banner__tag--astral {
-  background-color: $astral;
-}
-
-.banner__tag--matisse {
-  background-color: $matisse;
-}
-
-.banner__tag--carrot {
-  background-color: $carrot;
-  color: $ship-grey;
 }

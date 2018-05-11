@@ -1,3 +1,20 @@
-.breadcrumb-v2 {
-  border-bottom:none !important;
+.breadcrumb {
+  border-bottom:none;
+  padding: 0;
+}
+
+.breadcrumb__list {
+  padding-left: 0;
+}
+
+.breadcrumb__item {
+  background-image: url(../assets/img/chevron-icon.svg);
+  background-size: 12px 14px;
+  background-repeat: no-repeat;
+  background-position: right center;
+    padding-right: 22px;
+}
+
+.breadcrumb__item::after {
+  content: none;
 }

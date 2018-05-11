@@ -1,4 +1,4 @@
-<header>
+<header class="border-bottom--iron-sm border-bottom--iron-md">
 	<a class="skiplink" href="#main" tabindex="0">
 		Skip to main content
 	</a>
@@ -8,14 +8,21 @@
 
 			{% include logo.html %}
 
-			{% include language-switch.html %}
+			{% if page.language-switch != false %}
+				{% include language-switch.html %}
+			{% endif %}
 
-			{% include secondary-nav.html %}
+			{% if page.secondary-nav != false %}
+				{% include secondary-nav.html %}
+			{% endif %}
 
 		</div>
 	</div>
 
-	{% include primary-nav.html %}
+	{% if page.primary-nav != false %}
+		{% include primary-nav.html %}
+	{% endif %}
+
 
 	{% if page.search != false %}
 		{% include search.html %}

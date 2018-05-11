@@ -8,5 +8,7 @@ layout: basic
 - The Prototype Kit uses the [ONS Website Pattern Library](http://onsdigital.github.io/ons-pattern-library-starter) styles as it's base
 - Prototype styles are added on to any element with the `.prototype` class added
 
-## Example pages
+## Pages
 - [Example](example)
+- [Elements](elements)
+- [Patterns](patterns)
