@@ -4,6 +4,7 @@
 
 .prototype {
 // Elements
+@import "breakpoints";
 @import "colours";
 @import "typography";
 @import "tables";
@@ -12,6 +13,8 @@
 @import "borders";
 @import "forms";
 @import "flex-grid";
+@import "florence";
+@import "utilities";
 
 // Patterns
 @import "banners";
@@ -21,7 +24,5 @@
 @import "show-hide";
 @import "details";
 @import "footnotes";
-
-// Utilities
 @import "pattern-library";
 }

@@ -12,3 +12,4 @@ layout: basic
 - [Example](example)
 - [Elements](elements)
 - [Patterns](patterns)
+- [Prototypes](prototypes)

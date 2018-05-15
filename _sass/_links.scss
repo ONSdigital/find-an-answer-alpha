@@ -1,16 +1,11 @@
-// Custom styles created for the "basic" template
-.basic a {
-  text-decoration: underline;
-}
-
-.basic a:visited {
-  color: $indigo;
-}
-
 // Add underline
 
 .link--underline {
   text-decoration: underline;
+}
+
+.link--no-underline {
+  text-decoration: none;
 }
 
 // Visited links
@@ -44,6 +39,12 @@ a:focus {
 summary:focus {
   outline: 3px solid $carrot;
   color: $thunder;
+}
+
+// Back links
+
+.back-link::before {
+  content: "< ";
 }
 
 // Buttons
