@@ -35,7 +35,7 @@ h6 {
 }
 
 // Base font size
-address,li,p,.btn {
+address,li,p,.btn, summary {
   font-size: 16px;
   margin-bottom: $spacing-unit*4;
   @media (min-width: 768px) {
@@ -134,4 +134,15 @@ ul.section-contents {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+// panel
+
+summary {
+  margin-bottom:0;
+}
+
+.panel {
+  padding-top: $spacing-unit;
+  padding-bottom: $spacing-unit;
 }

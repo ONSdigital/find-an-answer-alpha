@@ -40,11 +40,11 @@
 .prototype h6 {
   padding-top: 16px;
   font-weight: bold; }
-.prototype address, .prototype li, .prototype p, .prototype .btn {
+.prototype address, .prototype li, .prototype p, .prototype .btn, .prototype summary {
   font-size: 16px;
   margin-bottom: 32px; }
   @media (min-width: 768px) {
-    .prototype address, .prototype li, .prototype p, .prototype .btn {
+    .prototype address, .prototype li, .prototype p, .prototype .btn, .prototype summary {
       font-size: 18px; } }
 .prototype ul, .prototype ol {
   margin-bottom: 32px;
@@ -120,6 +120,11 @@
   list-style: none;
   margin: 0;
   padding: 0; }
+.prototype summary {
+  margin-bottom: 0; }
+.prototype .panel {
+  padding-top: 8px;
+  padding-bottom: 8px; }
 .prototype caption {
   padding-bottom: 16px;
   margin-bottom: 0;
