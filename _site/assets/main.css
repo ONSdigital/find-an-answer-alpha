@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .prototype .font-color--astral {
   color: #3B7A9E; }
 .prototype .font-color--abbey {
@@ -172,7 +173,7 @@
   outline: 3px solid #FF9933;
   color: #323132; }
 .prototype .back-link::before {
-  content: "< "; }
+  content: "◀ "; }
 .prototype .btn {
   margin-right: 0.5em; }
 .prototype .basic a.btn {
