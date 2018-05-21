@@ -63,14 +63,14 @@
       <div class="col col--md-one col--lg-one">
         <a class="back-link" href="#">Back</a>
         <h1 class="roboto">Select a dataset</h1>
-
-        <!-- <details role="group" class="margin-top--4">
+<!--
+        <details role="group" class="margin-top--4">
           <summary role="button" aria-controls="details-content-0" aria-expanded="false"><span class="summary">What is this page?</span>
           </summary>
           <div class="panel" id="details-content-0" aria-hidden="true">
             <ul class="margin-bottom--0">
               <li>A list of datasets that can be added to this collection</li>
-              <li>Select one to update and preview it</li>
+              <li>Select one to see the options available</li>
             </ul>
           </div>
         </details> -->
@@ -79,7 +79,23 @@
     </div>
   </div>
 
-  <div class="wrapper margin-top--3">
+  <div class="wrapper padding-top--1 padding-bottom--0">
+    <div class="col-wrap">
+      <div class="col col--md-one col--lg-one padding-bottom--3">
+        <form class="margin-bottom--2">
+        <div class="clearfix">
+        <input type="search" id="search" autocomplete="off" class="search__input search__input--body col col--md-31 col--lg-31" name="q" placeholder="Search by dataset title">
+        <button type="submit" class="search__button search__button--body col--md-3 col--lg-3" id="nav-search-submit">
+        <span class="visuallyhidden">Search</span>
+        <span class="icon icon-search--light"></span>
+        </button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper">
     <hr>
   </div>
 
@@ -124,6 +140,9 @@
   </div>
 
 </div>
+
+<br>
+<br>
 
 
     
