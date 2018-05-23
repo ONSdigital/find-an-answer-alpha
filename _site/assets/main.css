@@ -235,13 +235,16 @@
   border-bottom: none;
   padding: 0; }
 .prototype .breadcrumb__list {
-  padding-left: 0; }
+  padding-left: 0;
+  margin-top: 16px;
+  margin-bottom: 16px; }
 .prototype .breadcrumb__item {
   background-image: url(../assets/img/chevron-icon.svg);
   background-size: 12px 14px;
   background-repeat: no-repeat;
   background-position: right center;
-  padding-right: 22px; }
+  padding-right: 22px;
+  padding-bottom: 4px; }
 .prototype .breadcrumb__item::after {
   content: none; }
 .prototype .meta-v2.meta-wrap {
