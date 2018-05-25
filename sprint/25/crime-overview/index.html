@@ -1,31 +1,19 @@
---- 
-layout: prototype 
-search: false 
-primary-nav: false 
-secondary-nav: false 
-language-switch: false 
-footer: false 
-title: "Crime in England and Wales: year ending December 2017" 
+---
+layout: prototype
+search: false
+primary-nav: false
+secondary-nav: false
+language-switch: false
+footer: false
+title: "Crime in England and Wales: year ending December 2017"
 ---
 <style>
+@media screen and (min-width: 768px) {
   .sticky {
     position: sticky;
     top: 0;
   }
-
-  /* .filler {
-        margin-bottom: 1px;
-    }
-    #sticky-nav.active {
-        position: fixed;
-        top: -8px;
-    }
-
-    @media (min-width: 992px) {
-        #sticky-nav.active {
-            top: -36px;
-        }
-    } */
+}
 </style>
 <main id="main" role="main" tabindex="-1" class="prototype">
   <div class="page-neutral-intro background--gallery">
@@ -43,7 +31,7 @@ title: "Crime in England and Wales: year ending December 2017"
                   <a class="breadcrumb__link" href="#">Bulletins</a>
                 </li>
                 <li class="breadcrumb__item">
-                  Crime in England and Wales: year ending December 2017
+                  {{ page.title }}
                 </li>
               </ol>
             </div>
@@ -58,8 +46,8 @@ title: "Crime in England and Wales: year ending December 2017"
     <div class="wrapper">
       <div class="col-wrap">
         <div class="col">
-          <h1 class="text margin-top-sm--0 margin-top-md--0 margin-bottom-sm--1 margin-bottom-md--5">{{ page.title }}</h1>
-          <p class="page-intro__content">Crime against households and adults, also including data on crime experienced by children, and crimes against businesses
+          <h1 class="text margin-top-sm--0 margin-top-md--0 margin-bottom-sm--2 margin-bottom-md--3">{{ page.title }}</h1>
+          <p class="font-medium margin-bottom-sm--3 margin-bottom-md--6">Crime against households and adults, also including data on crime experienced by children, and crimes against businesses
             and society.</p>
         </div>
       </div>
@@ -67,22 +55,17 @@ title: "Crime in England and Wales: year ending December 2017"
 
     <div class="wrapper">
       <div class="col-wrap">
-        <div class="col col--md-two-thirds col--lg-two-thirds">
-          <div style="border:1px solid white; background-color: white; padding:8px 32px 16px 32px;">
-
-
-            <p class="heading-medium font-weight--bold" style="color: #323132 ">While crime has fallen over the long-term, the short-term picture is more stable</p>
-            <img style="width:100%" src="crime_curvey_chart.png"
-              class="" alt="">
-            <!-- <p><span class="font-large font-weight--bold">37,443</span> </br>offences involving a knife or sharp instrument</p> -->
+        <div class="col col--md-two-thirds col--lg-two-thirds background--white margin-bottom--3">
+          <div class="padding-top--2 padding-right--2 padding-bottom--3 padding-left--2">
+            <p class="heading-small">While crime has fallen over the long-term, the short-term picture is more stable</p>
+            <img style="width:100%" src="crime_curvey_chart.png" class="" alt="">
           </div>
         </div>
-        <div class="col col--md-one-third col--lg-one-third padding-left-md--5">
+        <div class="col col--md-one-third col--lg-one-third padding-left-md--3">
           <p>A fall in crime estimated by the Crime Survey for England and Wales (CSEW) was mainly driven by a 28% decrease
-            in computer misuse offences</p>
+            in computer misuse offences.</p>
           <p>Police recorded crime data shows a a 22% increase in offences involving knives or other sharp instruments and a
-            11% increase in firearms offences</p>
-
+            11% increase in firearms offences.</p>
         </div>
       </div>
     </div>
@@ -90,10 +73,8 @@ title: "Crime in England and Wales: year ending December 2017"
     <div class="wrapper">
       <div class="col-wrap">
         <div class="col">
-          <p class="padding-top--3">
-            <!-- Part of <a href="" style="color:#fff">Crime in England and Wales</a> -->
-            <!-- <br /> -->
-            Released on 26 April 2018
+          <p class="padding-top-md--6">
+            Released date: 26 April 2018
             <br /> Next release: 19 July 2018 (provisional)
           </p>
         </div>
@@ -115,10 +96,10 @@ title: "Crime in England and Wales: year ending December 2017"
                 <a href="#section-1">Summary</a>
               </li>
               <li>
-                <a href="#section-3">Available data</a>
+                <a href="#section-2">Data</a>
               </li>
               <li>
-                <a href="#section-5">Analysis</a>
+                <a href="#section-3">Related</a>
               </li>
             </ul>
           </div>
@@ -166,11 +147,11 @@ title: "Crime in England and Wales: year ending December 2017"
                 <p class="margin-top--0">"Today’s figures show that, for most types of offence, the picture of crime has been fairly stable, with
                   levels much lower than the peak seen in the mid-1990s. Eight in ten adults had not experienced any of the
                   crimes asked about in our survey in the latest year.
-                  <br> However, we have seen an increase in the relatively rare, but "high-harm" violent offences such as homicide,
+                  <br><br> However, we have seen an increase in the relatively rare, but "high-harm" violent offences such as homicide,
                   knife crime and gun crime, a trend that has been emerging over the previous two years. We have also seen
                   evidence that increases in some types of theft have continued, in particular vehicle-related theft and
                   burglary." </p>
-                <p class="margin-top--0"> Alexa Bradley, Crime Statistics and Analysis, Office for National Statistics</p>
+                <p class="margin-top--0">— Alexa Bradley, Crime Statistics and Analysis, Office for National Statistics</p>
             </div>
           </details>
 
@@ -209,7 +190,7 @@ title: "Crime in England and Wales: year ending December 2017"
             </div>
           </details>
 
-          <h2 id="section-3">Available data</h2>
+          <h2 id="section-2">Data</h2>
           <br>
 
           <div class="js-show-hide">
@@ -325,6 +306,11 @@ title: "Crime in England and Wales: year ending December 2017"
               <a href="#section-1">Back to top</a>
             </p>
 
+            <h2 id="#section-3">Related</h2>
+            <p>
+              <a href="#section-1">Back to top</a>
+            </p>
+
             <!-- <h2 id="section-5">Analysis</h2>
           <br>
 
@@ -378,7 +364,7 @@ title: "Crime in England and Wales: year ending December 2017"
         </div>
 
       </div>
-      <script>
+      <!-- <script>
         //code to get a fake figure (as if from CMD)
         function createNode(element) {
           return document.createElement(element); // Create the type of element you pass in the parameters
@@ -399,6 +385,6 @@ title: "Crime in England and Wales: year ending December 2017"
           append(answer, p);
           // document.getElementById("disclaimer").style = "";
         }
-      </script>
+      </script> -->
 
 </main>
