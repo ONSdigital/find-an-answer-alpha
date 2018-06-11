@@ -1,71 +1,13 @@
-<!-- Copy of ONS.GOV.UK with extra prototype styles included -->
-
-<!DOCTYPE html>
-<html lang="en">
-
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Crime in England and Wales: year ending December 2017 - ONS Digital Publishing Prototype Kit</title>
-  <meta name="description" content="Use this to make ONS website prototypes.">
-  <link rel="stylesheet" type="text/css" href="https://cdn.ons.gov.uk/sixteens/655b62a/css/main.css">
-  <link rel="stylesheet" href="/assets/main.css">
-  <link rel="canonical" href="http://localhost:4000/sprint/25/crime-overview/">
-  <link rel="alternate" type="application/rss+xml" title="Digital Publishing Prototype Kit" href="/feed.xml">
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-
-  <meta name="robots" content="noindex, nofollow">
-
-</head>
-
-
-  <body>
-
-    
-      <div class="background--astral">
-	<div class="wrapper">
-		<div class="prototype padding-top--1 padding-bottom--1">
-			<p class="margin-bottom--0"><strong class="banner__tag">Warning</strong> this is a prototype. The content may not be complete or accurate.</p>
-		</div>
-	</div>
-</div>
-
-    
-
-    <header class="border-bottom--iron-sm border-bottom--iron-md">
-	<a class="skiplink" href="#main" tabindex="0">
-		Skip to main content
-	</a>
-
-	<div class="wrapper">
-		<div class="header col-wrap">
-
-			<div class="col col--lg-one-third col--md-one-third">
-  <a href="/dp-prototype-kit/">
-    <img class="logo" src="https://cdn.ons.gov.uk/assets/images/ons-logo/v2/ons-logo.svg" alt="Office for National Statistics">
-  </a>
-</div>
-
-
-			
-
-			
-
-		</div>
-	</div>
-
-	
-
-
-	
-
-</header>
-
-
-    <style>
+---
+layout: prototype
+search: false
+primary-nav: false
+secondary-nav: false
+language-switch: false
+footer: false
+title: "Crime in England and Wales: year ending December 2017"
+---
+<style>
 @media screen and (min-width: 768px) {
   .sticky {
     position: sticky;
@@ -89,7 +31,7 @@
                   <a class="breadcrumb__link" href="#">Bulletins</a>
                 </li>
                 <li class="breadcrumb__item">
-                  Crime in England and Wales: year ending December 2017
+                  {{ page.title }}
                 </li>
               </ol>
             </div>
@@ -104,7 +46,7 @@
     <div class="wrapper">
       <div class="col-wrap">
         <div class="col">
-          <h1 class="text margin-top-sm--0 margin-top-md--0 margin-bottom-sm--2 margin-bottom-md--3">Crime in England and Wales: year ending December 2017</h1>
+          <h1 class="text margin-top-sm--0 margin-top-md--0 margin-bottom-sm--2 margin-bottom-md--3">{{ page.title }}</h1>
           <p class="font-medium margin-bottom-sm--3 margin-bottom-md--6">Crime against households and adults, also including data on crime experienced by children, and crimes against businesses
             and society.</p>
         </div>
@@ -116,7 +58,7 @@
         <div class="col col--md-two-thirds col--lg-two-thirds background--white margin-bottom--3">
           <div class="padding-top--2 padding-right--2 padding-bottom--3 padding-left--2">
             <p class="heading-small">While crime has fallen over the long-term, the short-term picture is more stable</p>
-            <img style="width:100%" src="/assets/img/crime_survey_chart_2.png" class="" alt="">
+            <img style="width:100%" src="{{ "/assets/img/crime_survey_chart_2.png" | relative_url }}" class="" alt="">
           </div>
         </div>
         <div class="col col--md-one-third col--lg-one-third padding-left-md--3">
@@ -292,7 +234,7 @@
                 <h3 class="margin-top--0"><a href="../weapons-crime">Weapons Crime in England and Wales</a></h3>
                 <p class="font-weight--bold">Police recorded more crimes involving weapons, with knife crime in cities rising most</p>
                 <div class="margin-bottom--2 margin-top--2" style="border:1px solid white; padding:8px 16px 16px 16px; background-color:white;">
-                  <img style="width:100%" src="/assets/img/police_recorded_crime_2.png" class="" alt="">
+                  <img style="width:100%" src="{{ "/assets/img/police_recorded_crime_2.png" | relative_url }}" class="" alt="">
                 </div>
                 <details role="group" class="margin-bottom--2 margin-top--2">
                 <summary role="button" aria-controls="details-content-1" aria-expanded="true">
@@ -334,15 +276,3 @@
       </div>
 
 </main>
-
-
-    
-
-  </body>
-
-  <!--[if gt IE 8]><!-->
-  <script type="text/javascript" src="https://cdn.ons.gov.uk/sixteens/1f354a7/js/main.js"></script>
-  <script type="text/javascript" src="https://beta.ons.gov.uk/js/app.js"></script>
-  <!--<![endif]-->
-
-</html>
