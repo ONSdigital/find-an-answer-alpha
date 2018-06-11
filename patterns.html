@@ -9,15 +9,43 @@ footer: false
 ---
 
 <div class="wrapper prototype">
-  <div class="col-wrap">
-    <div class="col col--md-one col--lg-one">
+  <div class="col-wrap" style="margin-bottom: 200px;">
+
+    <div class="col col--md-one-third col--lg-one-quarter sticky">
+          {% include sticky-nav.html %}
+    </div>
+
+    <div class="col col--md-two-thirds col--lg-three-quarters">
       <h1>Patterns</h1>
-      <h2>Breadcrumbs</h2>
+      <h2 id="section-1">Breadcrumbs</h2>
       {% include breadcrumbs.html %}
-      <h2>Alerts</h2>
+      <h2 id="section-2">Headings</h2>
+      {% include headings.html %}
+      {% include back-to-top.html %}
+      <h2 id="section-3">Alerts</h2>
       {% include alerts/info.html %}
-      <h2>Tables</h2>
+      {% include back-to-top.html %}
+      <h2 id="section-4">Tables</h2>
       {% include tables/example-01.html %}
+      {% include back-to-top.html %}
+      <h2 id="section-5">Accordian</h2>
+      {% include accordian.html %}
+      {% include back-to-top.html %}
+      <h2 id="section-6">Small content box</h2>
+      {% include small-content-box.html %}
+      {% include back-to-top.html %}
+      <h2 id="section-7">Snapshots</h2>
+      {% include snapshot.html %}
+      {% include back-to-top.html %}
+      <h2 id="section-8">Related links</h2>
+      {% include related-links.html %}
+      {% include back-to-top.html %}
+      <h2 id="section-9">Toggle content</h2>
+      {% include toggle-content.html %}
+      {% include back-to-top.html %}
+      <h2 id="section-10">Get all data</h2>
+      {% include get-all-data.html %}
+      {% include back-to-top.html %}
     </div>
   </div>
 </div>

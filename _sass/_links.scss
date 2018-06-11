@@ -15,6 +15,10 @@
   color: $indigo !important;
 }
 
+a:hover {
+  color: $link-hover-colour;
+}
+
 .js-hover-click .background--gallery a:visited,
 .background--mercury.js-hover-click a:visited,
 .page-content a:visited {

@@ -57,10 +57,50 @@
 
 
     <div class="wrapper prototype">
-  <div class="col-wrap">
-    <div class="col col--md-one col--lg-one">
+  <div class="col-wrap" style="margin-bottom: 200px;">
+
+    <div class="col col--md-one-third col--lg-one-quarter sticky">
+          <div class="">
+  <h2 class="heading-medium">Sections</h2>
+  <ul class="section-contents">
+    <li>
+      <a href="#section-1">Breadcrumbs</a>
+    </li>
+    <li>
+      <a href="#section-2">Headings</a>
+    </li>
+    <li>
+      <a href="#section-3">Alerts</a>
+    </li>
+    <li>
+      <a href="#section-4">Tables</a>
+    </li>
+    <li>
+      <a href="#section-5">Accordian</a>
+    </li>
+    <li>
+      <a href="#section-6">Small content box</a>
+    </li>
+    <li>
+      <a href="#section-7">Snapshots</a>
+    </li>
+    <li>
+      <a href="#section-8">Related links</a>
+    </li>
+    <li>
+      <a href="#section-9">Toggle content</a>
+    </li>
+    <li>
+      <a href="#section-10">Get all data</a>
+    </li>
+  </ul>
+</div>
+
+    </div>
+
+    <div class="col col--md-two-thirds col--lg-three-quarters">
       <h1>Patterns</h1>
-      <h2>Breadcrumbs</h2>
+      <h2 id="section-1">Breadcrumbs</h2>
       <nav>
   <div class="breadcrumb">
     <ol class="breadcrumb__list">
@@ -74,13 +114,23 @@
   </div>
 </nav>
 
-      <h2>Alerts</h2>
-      <div class="background--gallery border-left--matisse padding-left--1 padding-right--1 padding-top--1 padding-bottom--1 margin-bottom--4">
+      <h2 id="section-2">Headings</h2>
+      <h1 class="heading-xlarge">This is an H1 heading</h1>
+<h2 class="heading-large">This is an H2 heading</h2>
+<h3 class="heading-medium">This is an H3 heading</h3>
+<h4 class="heading-small">This is an H4 heading</h4>
+
+      <p class="margin-top--6"><a href="#section-1">Back to top</a></p>
+
+      <h2 id="section-3">Alerts</h2>
+      <div class="background--gallery border-left--matisse padding-left--2 padding-right--1 padding-top--1 padding-bottom--1 margin-bottom--2">
   <p class="margin-bottom--0">This is the latest release. <a href="#">View previous releases</a>.</p>
 </div>
 
-      <h2>Tables</h2>
-      <table class="table-v2 margin-top--2 margin-bottom--2">
+      <p class="margin-top--6"><a href="#section-1">Back to top</a></p>
+
+      <h2 id="section-4">Tables</h2>
+      <table class="table-v2 margin-top--2 margin-bottom--6">
   <tbody>
     <tr>
       <th>Year</th>
@@ -106,6 +156,104 @@
 
   </tbody>
 </table>
+
+      <p class="margin-top--6"><a href="#section-1">Back to top</a></p>
+
+      <h2 id="section-5">Accordian</h2>
+      <div class="js-show-hide">
+<div class="show-hide show-hide--light background--gallery margin-bottom--2">
+    <div class="js-show-hide__title ">
+      <p class="heading-small padding-left--2 margin-top--1 margin-bottom--1">
+        What do you need to know about these numbers?</p>
+    </div>
+    <div class="js-show-hide__content padding-left--2 padding-right--2 padding-top--4 border-top--iron" style="overflow: auto;">
+      <p>Morbi efficitur nibh vitae quam ullamcorper, et dapibus massa suscipit. Sed aliquam elit at mi pulvinar, et imperdiet nunc pulvinar. Vestibulum scelerisque eu sem ac rutrum. Vestibulum convallis metus ipsum, sed mattis lectus lacinia quis. Donec luctus tellus viverra lorem placerat, ac tincidunt purus tristique.</p>
+      <p>Fusce ut pulvinar massa. Vestibulum commodo accumsan nulla. Sed vitae efficitur odio. Vestibulum scelerisque, nisi vitae lacinia imperdiet, arcu augue pharetra nunc, id varius justo neque vitae diam.</p>
+      </div>
+  </div>
+</div>
+
+      <p class="margin-top--6"><a href="#section-1">Back to top</a></p>
+
+      <h2 id="section-6">Small content box</h2>
+      <div class="content-box">
+  <h3 class="heading-medium">Heading for a small box</h3>
+  <p>This component is used for one piece of information at a time <a href="#">like a link to more content</a></p>
+</div>
+
+      <p class="margin-top--6"><a href="#section-1">Back to top</a></p>
+
+      <h2 id="section-7">Snapshots</h2>
+      <div class="flex-grid">
+  <div class="flex-col background--gallery padding-left--2 padding-right--2">
+    <h3><a class="heading-medium" href="../crime-overview">Crime in England and Wales</a></h3>
+    <p class="font-weight--bold">While crime has fallen over the long-term, the short-term picture is more stable</p>
+    <div class="margin-bottom--2" style="padding:8px 8px 8px 8px; background-color:white;">
+      <img style="width:100%" src="/dp-prototype-kit/assets/img/crime_survey_chart_2.png" class="" alt="">
+    </div>
+    <details role="group" class="margin-bottom--2">
+      <summary role="button" aria-controls="details-content-1" aria-expanded="true">
+        <span class="summary">What you need to know<span class="visuallyhidden"></span></summary>
+        <div class="panel" id="details-content-1" aria-hidden="false">
+          <p class="margin-top--0 margin-bottom--1">As measured by the Crime Survey of England and Wales</p>
+        </div>
+    </details>
+  </div>
+
+  <div class="flex-col background--gallery padding-left--2 padding-right--2">
+    <h3><a class="heading-medium" href="#">Homicide in England and Wales</a></h3>
+    <p class="font-weight--bold">The number of homicides has been impacted by recent terrorist attacks</p>
+    <div class="margin-bottom--2" style="background-color:white;">
+      <p class="font-medium margin-bottom--0" style="padding:16px;">Homicides recorded by the police fall 1% to 688</p>
+    </div>
+    <details role="group" class="margin-bottom--2">
+      <summary role="button" aria-controls="details-content-1" aria-expanded="true">
+        <span class="summary">What you need to know<span class="visuallyhidden"></span></summary>
+        <div class="panel" id="details-content-1" aria-hidden="false">
+          <p class="margin-top--0 margin-bottom--1">These numbers are also affected by the 2017 Hillsborough verdict.</p>
+        </div>
+    </details>
+  </div>
+</div>
+
+      <p class="margin-top--6"><a href="#section-1">Back to top</a></p>
+
+      <h2 id="section-8">Related links</h2>
+      <div class="content-box">
+  <h3 class="heading-medium">Heading for related links</h3>
+
+
+  <ul class="list--neutral">
+    <li class=""><a class="font-weight--bold" href="#">UK consumer price inflation</a></li>
+    <li class=""><a class="font-weight--bold" href="#">UK labour market</a></li>
+    <li class=""><a class="font-weight--bold" href="#">Weapons crime in England and Wales</a></li>
+    <li class=""><a class="font-weight--bold" href="#">Are your wages keeping up with inflation?</a></li>
+  </ul>
+</div>
+
+      <p class="margin-top--6"><a href="#section-1">Back to top</a></p>
+
+      <h2 id="section-9">Toggle content</h2>
+      <details role="group" class="margin-bottom--4">
+  <summary role="button" aria-controls="details-content-1" aria-expanded="true">
+    <span class="summary">Read more...
+  </summary>
+  <div class="" id="details-content-1" aria-hidden="false">
+    <p>The police recorded 39,598 offences involving a knife or sharp instrument in the year ending December 2017. This is a 22% increase compared with the previous year (32,468), and the highest number in the seven-years' of available data.</p>
+    <p>The past three years have seen a rise in the number of recorded crimes involving a knife or sharp instrument. Before this, we saw a general downward trend since the year ending March 2011.</p>
+    <p>"Assault with injury" and "assault with intent to cause serious harm" made up around half (49%) of all crimes involving a knife or sharp instrument. All categories of weapons crime for which we collect data showed increases.</p>
+    <p>London's Metropolitan Police saw the largest increase (accounting for 48% of the total increase).</p>
+    <p>Admissions data for NHS hospitals in England shows a 7% increase in assault by a sharp object. Rising from 4,054 in the year ending March 2016 to 4,351 in the following 12 months.</p>
+  </div>
+</details>
+
+      <p class="margin-top--6"><a href="#section-1">Back to top</a></p>
+
+      <h2 id="section-10">Get all data</h2>
+      <p>In hac habitasse platea dictumst. Morbi ultrices eros ultrices justo auctor finibus. Quisque nulla velit, dapibus id orci id, semper malesuada ipsum.</p>
+<p><a class="btn btn--primary btn--thick link--no-underline font-weight--bold" href="#">View all related data</a></p>
+
+      <p class="margin-top--6"><a href="#section-1">Back to top</a></p>
 
     </div>
   </div>
