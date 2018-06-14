@@ -47,9 +47,11 @@
     .prototype address, .prototype li, .prototype p, .prototype .btn, .prototype summary {
       font-size: 19px; } }
 .prototype ul, .prototype ol {
-  margin-bottom: 32px; }
+  margin-bottom: 32px;
+  padding-left: 16px; }
 .prototype li {
-  margin-bottom: 24px; }
+  padding: 0;
+  margin-bottom: 16px; }
 .prototype .font-weight--bold {
   font-weight: bold; }
 .prototype .font-weight--normal {
@@ -65,40 +67,40 @@
 .prototype h1 {
   font-size: 32px;
   line-height: 1.3;
-  margin: 15px 0 30px 0; }
+  margin: 16px 0 24px 0; }
   @media (min-width: 768px) {
     .prototype .font-xlarge,
     .prototype .heading-xlarge,
     .prototype h1 {
-      font-size: 48px;
-      margin: 30px 0 60px 0; } }
+      font-size: 40px;
+      margin: 32px 0 32px 0; } }
 .prototype .font-large,
 .prototype .heading-large,
 .prototype h2 {
   font-size: 24px;
-  margin: 24px 0 10px 0; }
+  margin: 24px 0 16px 0; }
   @media (min-width: 768px) {
     .prototype .font-large,
     .prototype .heading-large,
     .prototype h2 {
-      font-size: 36px;
-      margin: 48px 0 20px 0; } }
+      font-size: 32px;
+      margin: 32px 0 32px 0; } }
 .prototype .font-medium,
 .prototype .heading-medium,
 .prototype h3 {
   font-size: 19px;
-  margin: 24px 0 10px 0; }
+  margin: 24px 0 16px 0; }
   @media (min-width: 768px) {
     .prototype .font-medium,
     .prototype .heading-medium,
     .prototype h3 {
       font-size: 24px;
-      margin: 32px 0 20px 0; } }
+      margin: 32px 0 32px 0; } }
 .prototype .font-small,
 .prototype .heading-small,
 .prototype h4 {
   font-size: 16px;
-  margin: 12px 0 8px 0; }
+  margin: 16px 0 8px 0; }
   @media (min-width: 768px) {
     .prototype .font-small,
     .prototype .heading-small,
@@ -108,12 +110,13 @@
 .prototype .font-xsmall,
 .prototype .heading-xsmall,
 .prototype h5 {
-  font-size: 16px; }
+  font-size: 14px;
+  margin-bottom: 8px; }
   @media (min-width: 768px) {
     .prototype .font-xsmall,
     .prototype .heading-xsmall,
     .prototype h5 {
-      font-size: 19px; } }
+      font-size: 16px; } }
 .prototype .font-xxsmall,
 .prototype .heading-xxsmall,
 .prototype h6 {
@@ -138,6 +141,14 @@
 .prototype .panel {
   padding-top: 8px;
   padding-bottom: 8px; }
+.prototype blockquote {
+  text-align: center;
+  padding-left: 32px;
+  padding-right: 32px; }
+  @media (min-width: 768px) {
+    .prototype blockquote {
+      padding-left: 64px;
+      padding-right: 64px; } }
 .prototype caption {
   padding-bottom: 16px;
   margin-bottom: 0;
@@ -172,6 +183,9 @@
   color: #560072 !important; }
 .prototype a:hover {
   color: #2B8CC4; }
+.prototype a.white-link:hover {
+  color: #FFFFFF;
+  opacity: 0.7; }
 .prototype .js-hover-click .background--gallery a:visited,
 .prototype .background--mercury.js-hover-click a:visited,
 .prototype .page-content a:visited {
@@ -189,13 +203,14 @@
 .prototype .back-link::before {
   content: "◀ "; }
 .prototype .btn {
-  margin-right: 0.5em; }
+  margin-bottom: 0; }
 .prototype .basic a.btn {
   text-decoration: none; }
 .prototype .basic a.btn:visited {
-  color: white; }
+  color: #FFFFFF; }
 .prototype a.btn:hover {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #FFFFFF; }
 .prototype .section__content--markdown a.btn {
   text-decoration: none; }
 .prototype .btn:focus {
@@ -267,6 +282,8 @@
   display: inline; }
 .prototype .breadcrumb__item::after {
   content: none; }
+.prototype .breadcrumb__item:last-child {
+  background-image: none; }
 .prototype .meta-v2.meta-wrap {
   background: none;
   border-top: none;
@@ -386,3 +403,23 @@
       padding-right: 32px;
       padding-left: 32px;
       margin-bottom: 16px; } }
+.prototype .release-data {
+  display: inline-block; }
+  .prototype .release-data p {
+    margin-bottom: 16px; }
+  .prototype .release-data .panel {
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 5px solid #FFFFFF;
+    padding-left: 16px;
+    padding-right: 16px; }
+.prototype .info-alert {
+  position: relative; }
+  .prototype .info-alert p {
+    display: block;
+    padding-left: 50px;
+    font-weight: bold; }
+  .prototype .info-alert .icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -17px; }

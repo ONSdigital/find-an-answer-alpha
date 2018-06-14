@@ -23,3 +23,7 @@
 .breadcrumb__item::after {
   content: none;
 }
+
+.breadcrumb__item:last-child {
+  background-image: none;
+}
