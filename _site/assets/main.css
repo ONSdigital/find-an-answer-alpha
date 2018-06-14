@@ -144,7 +144,8 @@
 .prototype blockquote {
   text-align: center;
   padding-left: 32px;
-  padding-right: 32px; }
+  padding-right: 32px;
+  margin-bottom: 32px; }
   @media (min-width: 768px) {
     .prototype blockquote {
       padding-left: 64px;

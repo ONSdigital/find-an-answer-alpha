@@ -172,6 +172,7 @@ blockquote {
   text-align: center;
   padding-left: $spacing-unit*4;
   padding-right: $spacing-unit*4;
+  margin-bottom: $spacing-unit*4;
   @media (min-width: 768px) {
     padding-left: $spacing-unit*8;
     padding-right: $spacing-unit*8;
