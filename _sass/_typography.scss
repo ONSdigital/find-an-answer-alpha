@@ -112,10 +112,10 @@ h3 {
 .heading-small,
 h4 {
   font-size: 16px;
-  margin: 16px 0 8px 0;
+  margin: 16px 0 16px 0;
   @media (min-width: 768px) {
     font-size: 19px;
-    margin: 24px 0 8px 0;
+    margin: 24px 0 16px 0;
   }
 }
 
@@ -126,6 +126,7 @@ h5 {
   margin-bottom: $spacing-unit;
   @media (min-width: 768px) {
     font-size: 16px;
+    margin-bottom: $spacing-unit*3;
   }
 }
 
@@ -169,7 +170,12 @@ summary {
 }
 
 blockquote {
-  text-align: center;
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  text-align: justify;
   padding-left: $spacing-unit*4;
   padding-right: $spacing-unit*4;
   margin-bottom: $spacing-unit*4;
