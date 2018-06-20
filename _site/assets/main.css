@@ -380,7 +380,7 @@
       visibility: visible; }
 .prototype .details-small summary {
   font-size: 16px; }
-.prototype .details-small p {
+.prototype .details-small p, .prototype .details-small li {
   font-size: 16px; }
 .prototype .footnote__link {
   text-decoration: underline;
