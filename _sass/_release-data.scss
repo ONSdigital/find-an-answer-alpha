@@ -1,5 +1,6 @@
 .release-data {
   display: inline-block;
+  margin-bottom: $spacing-unit*2;
 
   p {
     margin-bottom: $spacing-unit*2;
@@ -11,4 +12,9 @@
       padding-left: $spacing-unit*2;
       padding-right: $spacing-unit*2;
   }
+}
+
+.latest-release {
+  display: inline-block;
+  margin-bottom: $spacing-unit*0;
 }

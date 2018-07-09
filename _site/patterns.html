@@ -4,13 +4,33 @@
 <html lang="en">
 
   <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MBCBVQS');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Hotjar Tracking Code for https://onsdigital.github.io/dp-gdp-bulletin-proto -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:936393,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Digital Publishing Prototype Kit</title>
   <meta name="description" content="Use this to make ONS website prototypes.">
-  <link rel="stylesheet" type="text/css" href="https://cdn.ons.gov.uk/sixteens/655b62a/css/main.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.ons.gov.uk/sixteens/8882d38/css/main.css">
   <link rel="stylesheet" href="/assets/main.css">
   <link rel="canonical" href="http://localhost:4000/patterns.html">
   <link rel="alternate" type="application/rss+xml" title="Digital Publishing Prototype Kit" href="/feed.xml">
@@ -35,7 +55,7 @@
 		<div class="header col-wrap">
 
 			<div class="col col--lg-one-third col--md-one-third">
-  <a href="/dp-prototype-kit/">
+  <a href="https://www.ons.gov.uk/">
     <img class="logo" src="https://cdn.ons.gov.uk/assets/images/ons-logo/v2/ons-logo.svg" alt="Office for National Statistics">
   </a>
 </div>
@@ -64,43 +84,43 @@
   <h2 class="heading-medium">Sections</h2>
   <ul class="section-contents">
     <li>
-      <a href="#section-1">Breadcrumbs</a>
+      <a href="#accordian">Accordian</a>
     </li>
     <li>
-      <a href="#section-2">Headings</a>
+      <a href="#alerts">Alerts</a>
     </li>
     <li>
-      <a href="#section-3">Alerts</a>
+      <a href="#breadcrumbs">Breadcrumbs</a>
     </li>
     <li>
-      <a href="#section-4">Tables</a>
+      <a href="#charts">Charts</a>
     </li>
     <li>
-      <a href="#section-5">Accordian</a>
+      <a href="#get-all-data">Get all data</a>
     </li>
     <li>
-      <a href="#section-6">Small content box</a>
+      <a href="#headings">Headings</a>
     </li>
     <li>
-      <a href="#section-7">Snapshots</a>
+      <a href="#related-links">Related links</a>
     </li>
     <li>
-      <a href="#section-8">Related links</a>
+      <a href="#related-statistics">Related statistics</a>
     </li>
     <li>
-      <a href="#section-9">Toggle content</a>
+      <a href="#small-content-box">Small content box</a>
     </li>
     <li>
-      <a href="#section-10">Get all data</a>
+      <a href="#snapshots">Snapshots</a>
     </li>
     <li>
-      <a href="#section-11">Quote</a>
+      <a href="#tables">Tables</a>
     </li>
     <li>
-      <a href="#section-12">Info alert</a>
+      <a href="#toggle-content">Toggle content</a>
     </li>
     <li>
-      <a href="#section-13">Charts</a>
+      <a href="#quote">Quote</a>
     </li>
   </ul>
 </div>
@@ -109,7 +129,37 @@
 
     <div class="col col--md-two-thirds col--lg-three-quarters">
       <h1>Patterns</h1>
-      <h2 id="section-1">Breadcrumbs</h2>
+      <h2 id="accordian">Accordian</h2>
+      <div class="js-show-hide">
+<div class="show-hide show-hide--light background--gallery margin-bottom--2">
+    <div class="js-show-hide__title ">
+      <p class="heading-small margin-top--1 margin-bottom--1">
+        What do you need to know about these numbers?</p>
+    </div>
+    <div class="js-show-hide__content padding-top--4 border-top--iron" style="overflow: auto;">
+      <p>Morbi efficitur nibh vitae quam ullamcorper, et dapibus massa suscipit. Sed aliquam elit at mi pulvinar, et imperdiet nunc pulvinar. Vestibulum scelerisque eu sem ac rutrum. Vestibulum convallis metus ipsum, sed mattis lectus lacinia quis. Donec luctus tellus viverra lorem placerat, ac tincidunt purus tristique.</p>
+      <p>Fusce ut pulvinar massa. Vestibulum commodo accumsan nulla. Sed vitae efficitur odio. Vestibulum scelerisque, nisi vitae lacinia imperdiet, arcu augue pharetra nunc, id varius justo neque vitae diam.</p>
+      </div>
+  </div>
+</div>
+
+      <h2 id="alerts">Alerts</h2>
+      <div class="background--gallery border-left--matisse padding-left--2 padding-right--1 padding-top--1 padding-bottom--1 margin-bottom--2">
+  <p class="margin-bottom--0">This is the latest release. <a href="#">View previous releases</a>.</p>
+</div>
+
+      <br>
+      <div class="info-alert">
+  <i class="icon icon-info">
+  </i>
+  <p>
+    The data are not being used to support government policy.
+  </p>
+</div>
+
+      <p class="margin-top--4"><a href="#section-1">Back to top</a></p>
+
+      <h2 id="breadcrumbs">Breadcrumbs</h2>
       <nav>
   <div class="breadcrumb">
     <ol class="breadcrumb__list">
@@ -126,7 +176,51 @@
   </div>
 </nav>
 
-      <h2 id="section-2">Headings</h2>
+      <p class="margin-top--4"><a href="#section-1">Back to top</a></p>
+
+      <h2 id="charts">Charts</h2>
+      
+
+<p class="heading-small">Increases evident in police recorded offences involving a knife or sharp instrument for the third year</p>
+<p class="font-xsmall">England and Wales, year ending March 2011 to year ending December 2017</p>
+
+<div id="chart1"></div>
+
+<script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+
+<script>
+var pymParent = new pym.Parent('chart1', "https://www.ons.gov.uk/embed?uri=/economy/grossdomesticproductgdp/bulletins/secondestimateofgdp/januarytomarch2018/86d33913", {});
+</script>
+
+
+
+<p class="font-xsmall">Source: Police recorded crime, Home Office</p>
+<p class="heading-xsmall">Notes:</p>
+<ol>
+  <li class="font-xsmall">Police recorded crime data are not designated as National Statistics.</li>
+</ol>
+<h5 class="margin-bottom--1">Download this chart</h5>
+<div class="btn-group margin-bottom--4">
+  <a class="btn btn--primary font-xsmall link--no-underline" data-gtm-type="download-png" href="#">
+        Image
+    </a>
+  <a class="btn btn--primary font-xsmall link--no-underline" data-gtm-type="download-csv" href="#">
+        .CSV
+    </a>
+  <a class="btn btn--primary font-xsmall link--no-underline" data-gtm-type="download-xls" href="#">
+        .XLS
+    </a>
+</div>
+
+      <p class="margin-top--4"><a href="#section-1">Back to top</a></p>
+
+      <h2 id="get-all-data">Get all data</h2>
+      <p>In hac habitasse platea dictumst. Morbi ultrices eros ultrices justo auctor finibus. Quisque nulla velit, dapibus id orci id, semper malesuada ipsum.</p>
+<p><a class="btn btn--primary btn--thick link--no-underline font-weight--bold" href="#">View all data</a></p>
+
+      <p class="margin-top--4"><a href="#section-1">Back to top</a></p>
+
+      <h2 id="headings">Headings</h2>
       <h1 class="heading-xlarge">This is an H1 heading</h1>
 <h2 class="heading-large">This is an H2 heading</h2>
 <h3 class="heading-medium">This is an H3 heading</h3>
@@ -134,60 +228,45 @@
 
       <p class="margin-top--4"><a href="#section-1">Back to top</a></p>
 
-      <h2 id="section-3">Alerts</h2>
-      <div class="background--gallery border-left--matisse padding-left--2 padding-right--1 padding-top--1 padding-bottom--1 margin-bottom--2">
-  <p class="margin-bottom--0">This is the latest release. <a href="#">View previous releases</a>.</p>
+      <h2 id="related-links">Related links</h2>
+      <div class="content-box">
+  <h3 class="heading-medium">Heading for related links</h3>
+  <ul class="list--neutral">
+    <li class=""><a class="font-weight--bold" href="#">UK consumer price inflation</a></li>
+    <li class=""><a class="font-weight--bold" href="#">UK labour market</a></li>
+    <li class=""><a class="font-weight--bold" href="#">Weapons crime in England and Wales</a></li>
+    <li class=""><a class="font-weight--bold" href="#">Are your wages keeping up with inflation?</a></li>
+  </ul>
 </div>
 
       <p class="margin-top--4"><a href="#section-1">Back to top</a></p>
 
-      <h2 id="section-4">Tables</h2>
-      <table class="table-v2 margin-top--2 margin-bottom--6">
-  <tbody>
-    <tr>
-      <th>Year</th>
-      <th class="cell--align-right">UK Population</th>
-      <th class="cell--align-right">0 to 15 years (%)</th>
-      <th class="cell--align-right">16 to 64 years (%)</th>
-      <th class="cell--align-right">65 years and over (%)</th>
-    </tr>
-    <tr>
-      <td>1975</td>
-      <td class="cell--align-right">56,226,000</td>
-      <td class="cell--align-right">24.9</td>
-      <td class="cell--align-right">61.0</td>
-      <td class="cell--align-right">14.1</td>
-    </tr>
-    <tr>
-      <td>1985</td>
-      <td class="cell--align-right">56,554,000</td>
-      <td class="cell--align-right">20.7</td>
-      <td class="cell--align-right">64.1</td>
-      <td class="cell--align-right">15.2</td>
-    </tr>
-
-  </tbody>
-</table>
-
-      <p class="margin-top--4"><a href="#section-1">Back to top</a></p>
-
-      <h2 id="section-5">Accordian</h2>
-      <div class="js-show-hide">
-<div class="show-hide show-hide--light background--gallery margin-bottom--2">
-    <div class="js-show-hide__title ">
-      <p class="heading-small padding-left--2 margin-top--1 margin-bottom--1">
-        What do you need to know about these numbers?</p>
-    </div>
-    <div class="js-show-hide__content padding-left--2 padding-right--2 padding-top--4 border-top--iron" style="overflow: auto;">
-      <p>Morbi efficitur nibh vitae quam ullamcorper, et dapibus massa suscipit. Sed aliquam elit at mi pulvinar, et imperdiet nunc pulvinar. Vestibulum scelerisque eu sem ac rutrum. Vestibulum convallis metus ipsum, sed mattis lectus lacinia quis. Donec luctus tellus viverra lorem placerat, ac tincidunt purus tristique.</p>
-      <p>Fusce ut pulvinar massa. Vestibulum commodo accumsan nulla. Sed vitae efficitur odio. Vestibulum scelerisque, nisi vitae lacinia imperdiet, arcu augue pharetra nunc, id varius justo neque vitae diam.</p>
-      </div>
-  </div>
+      <h2 id="related-statistics">Related statistics</h2>
+      <div class="content-box">
+  <ul class="list--neutral margin-top--4">
+    <li id="index-of-production">
+      <p><a class="font-weight--bold" href="https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/indexofproduction/previousReleases">Index of Production</a> (IoP)</p>
+      <p>Movements in volume for the UK production industries: manufacturing, mining and quarrying, energy supply, and water and waste management.</p>
+    </li>
+    <li id="index-of-services">
+      <p><a class="font-weight--bold" href="https://www.ons.gov.uk/economy/economicoutputandproductivity/output/bulletins/indexofservices/previousReleases">Index of Services</a> (IoS)</p>
+      <p>Monthly movements in output for the services industries: distribution, hotels and restaurants; transport, storage and communication; business services and finance; and government and other services.</p>
+    </li>
+    <li id="output-construction">
+      <p><a class="font-weight--bold" href="https://www.ons.gov.uk/businessindustryandtrade/constructionindustry/datasets/outputintheconstructionindustry">Output in the construction industry</a></p>
+      <p class="font-xsmall">Dataset | Released on 11 June 2018</p>
+      <p>Monthly construction output for Great Britain.</p>
+    </li>
+    <li id="retail-sales-index">
+      <p><a class="font-weight--bold" href="https://www.ons.gov.uk/businessindustryandtrade/retailindustry/bulletins/retailsales/previousReleases">Retail Sales Index</a> (RSI)</p>
+      <p>A first estimate of retail sales in volume and value terms.</p>
+    </li>
+  </ul>
 </div>
 
       <p class="margin-top--4"><a href="#section-1">Back to top</a></p>
 
-      <h2 id="section-6">Small content box</h2>
+      <h2 id="small-content-box">Small content box</h2>
       <div class="content-box">
   <h3 class="heading-medium">Heading for a small box</h3>
   <p>This component is used for one piece of information at a time <a href="#">like a link to more content</a></p>
@@ -195,7 +274,7 @@
 
       <p class="margin-top--4"><a href="#section-1">Back to top</a></p>
 
-      <h2 id="section-7">Snapshots</h2>
+      <h2 id="snapshots">Snapshots</h2>
       <div class="flex-grid">
   <div class="flex-col background--gallery padding-left--2 padding-right--2">
     <h4><a class="heading-medium" href="../crime-overview">Crime in England and Wales</a></h4>
@@ -266,22 +345,37 @@
 
       <p class="margin-top--4"><a href="#section-1">Back to top</a></p>
 
-      <h2 id="section-8">Related links</h2>
-      <div class="content-box">
-  <h3 class="heading-medium">Heading for related links</h3>
+      <h2 id="tables">Tables</h2>
+      <table class="table-v2 margin-top--2 margin-bottom--6">
+  <tbody>
+    <tr>
+      <th>Year</th>
+      <th class="cell--align-right">UK Population</th>
+      <th class="cell--align-right">0 to 15 years (%)</th>
+      <th class="cell--align-right">16 to 64 years (%)</th>
+      <th class="cell--align-right">65 years and over (%)</th>
+    </tr>
+    <tr>
+      <td>1975</td>
+      <td class="cell--align-right">56,226,000</td>
+      <td class="cell--align-right">24.9</td>
+      <td class="cell--align-right">61.0</td>
+      <td class="cell--align-right">14.1</td>
+    </tr>
+    <tr>
+      <td>1985</td>
+      <td class="cell--align-right">56,554,000</td>
+      <td class="cell--align-right">20.7</td>
+      <td class="cell--align-right">64.1</td>
+      <td class="cell--align-right">15.2</td>
+    </tr>
 
-
-  <ul class="list--neutral">
-    <li class=""><a class="font-weight--bold" href="#">UK consumer price inflation</a></li>
-    <li class=""><a class="font-weight--bold" href="#">UK labour market</a></li>
-    <li class=""><a class="font-weight--bold" href="#">Weapons crime in England and Wales</a></li>
-    <li class=""><a class="font-weight--bold" href="#">Are your wages keeping up with inflation?</a></li>
-  </ul>
-</div>
+  </tbody>
+</table>
 
       <p class="margin-top--4"><a href="#section-1">Back to top</a></p>
 
-      <h2 id="section-9">Toggle content</h2>
+      <h2 id="toggle-content">Toggle content</h2>
       <details role="group" class="margin-bottom--4 margin-top--1">
   <summary role="button" aria-controls="details-content-1" aria-expanded="true">
     <span class="summary">Knife crime reaches a seven-year-high</span>
@@ -297,53 +391,12 @@
 
       <p class="margin-top--4"><a href="#section-1">Back to top</a></p>
 
-      <h2 id="section-10">Get all data</h2>
-      <p>In hac habitasse platea dictumst. Morbi ultrices eros ultrices justo auctor finibus. Quisque nulla velit, dapibus id orci id, semper malesuada ipsum.</p>
-<p><a class="btn btn--primary btn--thick link--no-underline font-weight--bold" href="#">View all related data</a></p>
-
-      <p class="margin-top--4"><a href="#section-1">Back to top</a></p>
-
-      <h2 id="section-11">Quote</h2>
+      <h2 id="quote">Quote</h2>
       <blockquote>
   <img style="" src="/assets/img/quote.png" class="margin-bottom--2" alt="">
   <p class="margin-bottom--2">Recent large rise in the cost of crude oil have fed through to the prices paid by consumers at the pump. Air fares and ferry prices also contributed to the overall increase in inflation due to the timing of Easter. Howver, these effcts have been partly offset by the price falls in computer games and energy costs rising by less than this time last year.</p>
   <p class="font-xsmall"><span class="font-weight--bold">Mike Hardie,</span> Head of Inflation, ONS</p>
 </blockquote>
-
-      <p class="margin-top--4"><a href="#section-1">Back to top</a></p>
-
-      <h2 id="section-12">Info alert</h2>
-      <div class="info-alert">
-  <i class="icon icon-info">
-  </i>
-  <p>
-    The data are not being used to support government policy.
-  </p>
-</div>
-
-      <p class="margin-top--4"><a href="#section-1">Back to top</a></p>
-
-      <h2 id="section-13">Charts</h2>
-      <p class="heading-small">Increases evident in police recorded offences involving a knife or sharp instrument for the third year</p>
-<p class="font-xsmall">England and Wales, year ending March 2011 to year ending December 2017</p>
-<img style="width:100%" src="/assets/img/charts/weapons_firearm_chart_lg.png" class="" alt="">
-<p class="heading-xsmall">Source: Police recorded crime, Home Office</p>
-<p class="heading-xsmall">Notes:</p>
-<ol>
-  <li class="font-xsmall">Police recorded crime data are not designated as National Statistics.</li>
-</ol>
-<h5 class="margin-bottom--1">Download this chart</h5>
-<div class="btn-group margin-bottom--4">
-  <button class="btn btn--primary font-xsmall">
-        Image
-    </button>
-  <button class="btn btn--primary font-xsmall">
-        .CSV
-    </button>
-  <button class="btn btn--primary font-xsmall">
-        .XLS
-    </button>
-</div>
 
       <p class="margin-top--4"><a href="#section-1">Back to top</a></p>
 

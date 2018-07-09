@@ -14,6 +14,26 @@
   display: inline;
 }
 
+.js-show-hide__content {
+
+  padding-left: $spacing-unit*3;
+  padding-right: $spacing-unit*3;
+
+  @media (min-width: 768px){
+    padding-right: $spacing-unit*4;
+    padding-left: $spacing-unit*4;
+  }
+}
+
+.js-show-hide__button {
+  padding-left: $spacing-unit*3;
+  padding-right: $spacing-unit*9;
+
+  @media (min-width: 768px){
+    padding-left: $spacing-unit*4;
+  }
+}
+
 .download-options__container .show-hide__title {
   padding-right: 0;
 }
@@ -37,12 +57,12 @@
   .js-show-hide__button {
     color: $matisse;
     text-decoration: underline;
-      
+
   }
   .show-hide button:focus {
     outline: 3px solid $carrot;
   }
-    
+
 }
 
 .show-hide--slim {

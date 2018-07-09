@@ -5,9 +5,28 @@
   padding-left: $spacing-unit*3;
   margin-bottom: $spacing-unit*1;
 
+  p {
+    margin-top: $spacing-unit*3;
+    margin-bottom: $spacing-unit*3;
+  }
+  ul {
+    padding-left: 0;
+  }
+  li {
+    margin-bottom: $spacing-unit*4;
+    p {
+      margin-top: $spacing-unit;
+      margin-bottom: $spacing-unit;
+    }
+  }
+
   @media (min-width: 768px){
     padding-right: $spacing-unit*4;
     padding-left: $spacing-unit*4;
     margin-bottom: $spacing-unit*2;
+    p {
+      margin-top: $spacing-unit*3;
+      margin-bottom: $spacing-unit*3;
+    }
   }
 }

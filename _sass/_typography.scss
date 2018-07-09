@@ -184,3 +184,14 @@ blockquote {
     padding-right: $spacing-unit*8;
   }
 }
+
+.header-quote {
+  img {
+    width: 52px;
+    height: 34px;
+  }
+  text-align: left;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: $spacing-unit*4;
+}
