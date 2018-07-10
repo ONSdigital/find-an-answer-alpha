@@ -4,6 +4,11 @@
 
 .js-show-hide__title {
   display: inline;
+  p {
+    margin-top: $spacing-unit;
+    margin-bottom: $spacing-unit;
+    
+  }
 }
 
 .js-show-hide--inline {
@@ -18,10 +23,14 @@
 
   padding-left: $spacing-unit*3;
   padding-right: $spacing-unit*3;
+  padding-top: $spacing-unit*3;
+
+  border-top: 1px solid $iron;
 
   @media (min-width: 768px){
     padding-right: $spacing-unit*4;
     padding-left: $spacing-unit*4;
+    padding-top: $spacing-unit*4;
   }
 }
 
