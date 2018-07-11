@@ -257,6 +257,8 @@
   border: none; }
 .prototype .border-bottom--white {
   border-bottom: 1px solid #FFFFFF; }
+.prototype .border--gallery {
+  border: 1px solid #EAEAEA; }
 .prototype .search__input.search__input--postcode {
   background: #FFFFFF;
   border: 2px solid #323132; }
