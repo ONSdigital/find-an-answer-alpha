@@ -234,6 +234,8 @@
 .prototype .btn:focus {
   outline: 3px solid #FF9933;
   color: #FFFFFF; }
+.prototype .sticky-nav a {
+  font-size: 16px; }
 .prototype .visually-hidden {
   /*https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html*/
   position: absolute !important;
