@@ -268,9 +268,13 @@
   display: flex; }
 .prototype .flex-col {
   flex: 1;
-  margin-right: 16px; }
+  margin-right: 16px;
+  position: relative; }
 .prototype .flex-col:last-child {
   margin-right: 0; }
+.prototype .position-bottom {
+  position: absolute;
+  bottom: 0; }
 .prototype .roboto {
   font-family: 'Roboto Slab', serif; }
 @media screen and (min-width: 992px) {
