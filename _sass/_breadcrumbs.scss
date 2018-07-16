@@ -29,6 +29,19 @@
   margin-right: 2px;
 }
 
+.breadcrumb__item__white {
+  background-image: url(../assets/img/chevron-icon-white.svg);
+  background-size: 12px 14px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  //padding-right: 22px;
+  padding-right: 16px;
+  padding-bottom: 4px;
+  line-height: 1.2;
+  display: inline;
+  margin-right: 2px;
+}
+
 .breadcrumb__item::after {
   content: none;
 }
