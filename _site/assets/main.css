@@ -261,6 +261,8 @@
   border-bottom: 1px solid #FFFFFF; }
 .prototype .border--gallery {
   border: 1px solid #EAEAEA; }
+.prototype .border-bottom--haze {
+  border-bottom: 1px solid #F0F1F1; }
 .prototype .search__input.search__input--postcode {
   background: #FFFFFF;
   border: 2px solid #323132; }
@@ -315,6 +317,16 @@
   margin-bottom: 16px; }
 .prototype .breadcrumb__item {
   background-image: url(../assets/img/chevron-icon.svg);
+  background-size: 12px 14px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 16px;
+  padding-bottom: 4px;
+  line-height: 1.2;
+  display: inline;
+  margin-right: 2px; }
+.prototype .breadcrumb__item__white {
+  background-image: url(../assets/img/chevron-icon-white.svg);
   background-size: 12px 14px;
   background-repeat: no-repeat;
   background-position: right center;
@@ -483,8 +495,7 @@
         margin-top: 24px;
         margin-bottom: 24px; } }
 .prototype .release-data {
-  display: inline-block;
-  margin-bottom: 16px; }
+  display: inline-block; }
   .prototype .release-data p {
     margin-bottom: 16px; }
   .prototype .release-data .panel {
