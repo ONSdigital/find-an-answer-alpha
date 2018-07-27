@@ -37,3 +37,23 @@
     font-size: 16px;
   }
 }
+
+.icon-box {
+  position: relative;
+
+  p {
+    display: block;
+    padding-left: 50px;
+  }
+
+  .icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -17px;
+  }
+}
+
+.icon-pdf--dark {
+  background-position: -16px -436px;
+
+}

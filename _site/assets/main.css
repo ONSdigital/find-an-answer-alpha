@@ -498,6 +498,17 @@
   background-color: rgba(255, 204, 0, 0.2); }
   .prototype .highlight p {
     font-size: 16px; }
+.prototype .icon-box {
+  position: relative; }
+  .prototype .icon-box p {
+    display: block;
+    padding-left: 50px; }
+  .prototype .icon-box .icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -17px; }
+.prototype .icon-pdf--dark {
+  background-position: -16px -436px; }
 .prototype .release-data {
   display: inline-block; }
   .prototype .release-data p {
