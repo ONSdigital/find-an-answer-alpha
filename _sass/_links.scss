@@ -15,11 +15,15 @@
   color: $indigo !important;
 }
 
+a:visited {
+  color: $indigo;
+}
+
 a:hover {
   color: $link-hover-colour;
 }
 
-.astral-link {
+.astral-link, .astral-link:visited {
   color: $haze;
 }
 

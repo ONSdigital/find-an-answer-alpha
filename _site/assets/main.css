@@ -197,9 +197,11 @@
   text-decoration: none; }
 .prototype .visited {
   color: #560072 !important; }
+.prototype a:visited {
+  color: #560072; }
 .prototype a:hover {
   color: #2B8CC4; }
-.prototype .astral-link {
+.prototype .astral-link, .prototype .astral-link:visited {
   color: #F0F1F1; }
 .prototype a.astral-link:hover {
   color: #F0F1F1;
