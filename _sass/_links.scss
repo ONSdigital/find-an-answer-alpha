@@ -98,3 +98,20 @@ summary:focus {
     font-size: 16px;
   }
 }
+
+.section-contents a {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.section-contents a:hover {
+    text-decoration: underline;
+  }
+
+.section-contents li:before {
+  content: "–";
+  float: left;
+  display: block;
+  width: 16px;
+  margin-left: -16px;
+}

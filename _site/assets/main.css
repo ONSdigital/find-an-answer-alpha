@@ -138,8 +138,9 @@
   margin: 0;
   padding: 0; }
 .prototype .section-contents li {
-  margin: 0 0 8px 0;
-  padding: 0; }
+  margin: 0;
+  padding-right: 16px;
+  margin-left: 16px; }
 .prototype summary {
   margin-bottom: 0; }
 .prototype .panel {
@@ -239,6 +240,17 @@
   color: #FFFFFF; }
 .prototype .sticky-nav a {
   font-size: 16px; }
+.prototype .section-contents a {
+  font-size: 16px;
+  text-decoration: none; }
+.prototype .section-contents a:hover {
+  text-decoration: underline; }
+.prototype .section-contents li:before {
+  content: "–";
+  float: left;
+  display: block;
+  width: 16px;
+  margin-left: -16px; }
 .prototype .visually-hidden {
   /*https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html*/
   position: absolute !important;
