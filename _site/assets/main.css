@@ -140,7 +140,9 @@
 .prototype .section-contents li {
   margin: 0;
   padding-right: 16px;
-  margin-left: 16px; }
+  margin-left: 16px;
+  margin-bottom: 5px;
+  line-height: 20px; }
 .prototype summary {
   margin-bottom: 0; }
 .prototype .panel {
