@@ -55,6 +55,8 @@
   padding: 0;
   margin-top: 8px;
   margin-bottom: 8px; }
+.prototype .list-heading {
+  margin-bottom: 8px; }
 .prototype .font-weight--bold {
   font-weight: bold; }
 .prototype .font-weight--normal {
@@ -492,7 +494,7 @@
   overflow: auto;
   padding-right: 24px;
   padding-left: 24px;
-  margin-bottom: 8px; }
+  margin-bottom: 16px; }
   .prototype .content-box p {
     margin-top: 24px;
     margin-bottom: 24px; }
@@ -507,7 +509,7 @@
     .prototype .content-box {
       padding-right: 32px;
       padding-left: 32px;
-      margin-bottom: 16px; }
+      margin-bottom: 32px; }
       .prototype .content-box p {
         margin-top: 24px;
         margin-bottom: 24px; } }
