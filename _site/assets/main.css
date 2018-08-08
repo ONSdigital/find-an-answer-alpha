@@ -524,6 +524,15 @@
     position: absolute;
     top: 50%;
     margin-top: -17px; }
+.prototype .icon-box-small {
+  position: relative; }
+  .prototype .icon-box-small p {
+    display: block;
+    padding-left: 30px; }
+  .prototype .icon-box-small .icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -9px; }
 .prototype .icon-pdf--dark {
   background-position: -16px -436px; }
 .prototype .release-data {

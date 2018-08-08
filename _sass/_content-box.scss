@@ -53,6 +53,22 @@
   }
 }
 
+.icon-box-small {
+  position: relative;
+
+  p {
+    display: block;
+    padding-left: 30px;
+  }
+
+  .icon {
+    position: absolute;
+    top: 50%;
+    margin-top: -9px;
+  }
+}
+
+
 .icon-pdf--dark {
   background-position: -16px -436px;
 
