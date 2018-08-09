@@ -453,7 +453,8 @@
         font-size: 20px; }
   .prototype details .panel {
     border-left: 5px solid #A6A8AB;
-    padding-left: 16px; }
+    padding-left: 16px;
+    padding-top: 24px; }
   .prototype details .arrow {
     color: #206095;
     padding-right: 5px; }
