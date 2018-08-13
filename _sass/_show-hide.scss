@@ -100,6 +100,15 @@
 
 // headline
 
+.open-close {
+  float: right;
+  padding-right: $spacing-unit;
+  a {
+    font-size: 16px;
+    text-decoration: none;
+  }
+}
+
 .headline-title {
   padding-left: 0;
   border-top: 1px solid $gallery;
@@ -108,7 +117,7 @@
 }
 
 .headline-title:hover {
-  background-color: $gallery;
+  background-color: $alabaster;
 }
 
 .headline-content {

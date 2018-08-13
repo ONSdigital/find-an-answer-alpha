@@ -442,12 +442,18 @@
 .prototype .js-show-hide--slim .show-hide--slim button[aria-expanded=true]:after {
   top: 24%;
   right: 0; }
+.prototype .open-close {
+  float: right;
+  padding-right: 8px; }
+  .prototype .open-close a {
+    font-size: 16px;
+    text-decoration: none; }
 .prototype .headline-title {
   padding-left: 0;
   border-top: 1px solid #EAEAEA;
   color: #206095; }
 .prototype .headline-title:hover {
-  background-color: #EAEAEA; }
+  background-color: #F9F9F9; }
 .prototype .headline-content {
   padding-left: 0;
   padding-right: 0;
