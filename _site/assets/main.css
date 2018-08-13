@@ -280,6 +280,8 @@
   border-bottom: 1px solid #FFFFFF; }
 .prototype .border--gallery {
   border: 1px solid #EAEAEA; }
+.prototype .border-bottom--gallery {
+  border-bottom: 1px solid #EAEAEA; }
 .prototype .border-bottom--haze {
   border-bottom: 1px solid #F0F1F1; }
 .prototype .search__input.search__input--postcode {
@@ -391,10 +393,17 @@
 .prototype .download-options__container .js-show-hide__title button {
   width: auto; }
 .prototype .js-show-hide__title {
-  display: inline; }
+  display: inline-block;
+  width: 100%;
+  padding-left: 24px; }
   .prototype .js-show-hide__title p {
     margin-top: 8px;
     margin-bottom: 8px; }
+  @media (min-width: 768px) {
+    .prototype .js-show-hide__title {
+      padding-left: 32px; } }
+.prototype .js-show-hide__button {
+  padding-right: 72px; }
 .prototype .js-show-hide--inline {
   display: inline; }
 .prototype .show-hide--inline {
@@ -409,12 +418,6 @@
       padding-right: 32px;
       padding-left: 32px;
       padding-top: 32px; } }
-.prototype .js-show-hide__button {
-  padding-left: 24px;
-  padding-right: 72px; }
-  @media (min-width: 768px) {
-    .prototype .js-show-hide__button {
-      padding-left: 32px; } }
 .prototype .download-options__container .show-hide__title {
   padding-right: 0; }
 .prototype .download-options__container .js-show-hide__title button {
@@ -439,6 +442,17 @@
 .prototype .js-show-hide--slim .show-hide--slim button[aria-expanded=true]:after {
   top: 24%;
   right: 0; }
+.prototype .headline-title {
+  padding-left: 0;
+  border-top: 1px solid #EAEAEA;
+  color: #206095; }
+.prototype .headline-title:hover {
+  background-color: #EAEAEA; }
+.prototype .headline-content {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 16px;
+  border-top: none; }
 .prototype details {
   display: block;
   clear: both; }
