@@ -547,18 +547,4 @@
   <script type="text/javascript" src="https://beta.ons.gov.uk/js/app.js"></script>
   <!--<![endif]-->
 
-<!-- Open all and close all accordion. onclick event is added in the HTML to the element -->
-  <script>
-    function openAllAccordions() {
-      const accordionButtons = $('.headline .js-show-hide__button');
-      const accordionContents = $('.headline .js-show-hide__content');
-      accordionButtons.each(function() {
-        $(this).attr('aria-expanded', 'true');
-      });
-      accordionContents.each(function() {
-        $(this).attr('aria-hidden', 'false');
-      });
-    }
-  </script>
-
 </html>

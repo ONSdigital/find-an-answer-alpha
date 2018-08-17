@@ -124,8 +124,8 @@
 </div>
 
       <div class="border-bottom--gallery margin-top--4">
-  <div class="open-close" onclick="openAllAccordions()"><a href="">Open all</a></div>
-  <div class="js-show-hide headline">
+  <div class="open-close"><a href="">Open all</a></div>
+  <div class="js-show-hide">
     <div class="show-hide show-hide--light">
       <div class="js-show-hide__title headline-title">
         <p class="heading-small">
@@ -489,19 +489,5 @@ var pymParent = new pym.Parent('chart1', "https://www.ons.gov.uk/embed?uri=/econ
   <script type="text/javascript" src="https://cdn.ons.gov.uk/sixteens/1f354a7/js/main.js"></script>
   <script type="text/javascript" src="https://beta.ons.gov.uk/js/app.js"></script>
   <!--<![endif]-->
-
-<!-- Open all and close all accordion. onclick event is added in the HTML to the element -->
-  <script>
-    function openAllAccordions() {
-      const accordionButtons = $('.headline .js-show-hide__button');
-      const accordionContents = $('.headline .js-show-hide__content');
-      accordionButtons.each(function() {
-        $(this).attr('aria-expanded', 'true');
-      });
-      accordionContents.each(function() {
-        $(this).attr('aria-hidden', 'false');
-      });
-    }
-  </script>
 
 </html>
