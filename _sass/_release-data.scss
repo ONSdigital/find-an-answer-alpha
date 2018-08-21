@@ -1,6 +1,6 @@
 .release-data {
   display: inline-block;
-  
+
 
   p {
     margin-bottom: $spacing-unit*2;
@@ -18,3 +18,24 @@
   display: inline-block;
   margin-bottom: $spacing-unit*0;
 }
+
+
+.header-meta {
+  padding-top: $spacing-unit;
+  p {
+    border-right: 1px solid $haze;
+    margin-bottom: $spacing-unit;
+  }
+}
+
+.clear-border {
+  border-right: 0;
+}
+
+.background--haze-transparent {
+  background:rgba(255,255,255, 0.1);
+}
+
+// .background--haze-transparent {
+//   background-color:$nevada;
+// }
