@@ -315,7 +315,7 @@
 .prototype .banner__tag {
   display: inline-block;
   padding: 5px 8px;
-  margin-right: 16px;
+  margin-right: 4px;
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #414042; }
