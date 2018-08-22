@@ -3,11 +3,11 @@
 
 
   p {
-    margin-bottom: $spacing-unit*2;
+    margin-bottom: $spacing-unit*4;
   }
 
   .panel {
-      background:rgba(255,255,255, 0.1);
+      // background:rgba(255,255,255, 0.1);
       border-left: 5px solid $white;
       padding-left: $spacing-unit*2;
       padding-right: $spacing-unit*2;
@@ -21,10 +21,10 @@
 
 
 .header-meta {
-  padding-top: $spacing-unit;
+  padding-top: $spacing-unit*2;
   p {
-    border-right: 1px solid $haze;
-    margin-bottom: $spacing-unit;
+    border-right: 1px solid rgba(0, 0, 0, .15);
+    margin-bottom: $spacing-unit*2;
   }
 }
 
@@ -33,9 +33,12 @@
 }
 
 .background--haze-transparent {
-  background:rgba(255,255,255, 0.1);
+  background:rgba(255,255,255, 0.075);
 }
 
+.background--astraldark-transparent {
+  background:rgba(0,0,0, 0.03);
+}
 // .background--haze-transparent {
 //   background-color:$nevada;
 // }
