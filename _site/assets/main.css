@@ -583,9 +583,12 @@
   .prototype .release-data p {
     margin-bottom: 32px; }
   .prototype .release-data .panel {
+    background: rgba(255, 255, 255, 0.1);
     border-left: 5px solid #FFFFFF;
     padding-left: 16px;
     padding-right: 16px; }
+.prototype .background--0 {
+  background: none !important; }
 .prototype .latest-release {
   display: inline-block;
   margin-bottom: 0px; }
