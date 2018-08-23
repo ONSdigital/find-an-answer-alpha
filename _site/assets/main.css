@@ -634,7 +634,11 @@
   font-size: 16px;
   line-height: 1.31579;
   position: relative;
-  padding: 4px 0; }
+  padding: 4px 0;
+  margin-bottom: 24px; }
+  @media (min-width: 768px) {
+    .prototype .warning-text {
+      margin-bottom: 32px; } }
 .prototype .warning-text__icon {
   font-weight: 700;
   display: inline-block;
