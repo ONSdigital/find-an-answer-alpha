@@ -554,6 +554,8 @@
       .prototype .content-box p {
         margin-top: 24px;
         margin-bottom: 24px; } }
+.prototype .js-show-hide__content .highlight {
+  background-color: #FFFFFF; }
 .prototype .highlight {
   background-color: #EAEAEA; }
   .prototype .highlight p {
