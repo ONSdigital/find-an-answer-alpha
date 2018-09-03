@@ -669,11 +669,23 @@
   line-height: 29px;
   text-align: center;
   user-select: none; }
+.prototype .warning-text-large__icon {
+  min-width: 38px;
+  min-height: 38px;
+  line-height: 38px;
+  margin-top: -20px;
+  font-size: 1.6em; }
 .prototype .warning-text__text {
   display: block;
   margin-left: -15px;
   padding-left: 55px;
   font-weight: bold; }
+.prototype .warning-text-large__text {
+  font-size: 16px;
+  padding-left: 72px; }
+  @media (min-width: 768px) {
+    .prototype .warning-text-large__text {
+      font-size: 19px; } }
 .prototype .warning-text__assistive {
   position: absolute;
   width: 1px;
