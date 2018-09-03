@@ -693,3 +693,15 @@
 .prototype .pipe {
   color: black;
   opacity: 0.3; }
+.prototype .inset-text {
+  display: inline-block; }
+  .prototype .inset-text p {
+    margin-bottom: 16px; }
+  .prototype .inset-text .panel {
+    background: rgba(255, 255, 255, 0.1);
+    border-left: 5px solid #F0F1F1;
+    padding-left: 16px;
+    padding-right: 16px; }
+  @media (min-width: 768px) {
+    .prototype .inset-text p {
+      margin-bottom: 32px; } }
