@@ -600,6 +600,18 @@
 .prototype .latest-release {
   display: inline-block;
   margin-bottom: 0px; }
+.prototype .inset-text-19 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 19px; }
+.prototype .inset-text-16 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 16px; }
 .prototype .header-meta {
   padding-top: 0; }
   .prototype .header-meta p {
