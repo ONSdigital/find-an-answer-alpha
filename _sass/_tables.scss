@@ -39,3 +39,38 @@ th:last-child {
 sup {
   vertical-align: baseline;
 }
+
+.summary-table {
+  td {
+  text-align: right;
+  padding-right: $spacing-unit;
+  }
+  td:nth-child(2),
+  td:first-child {
+    text-align: left;
+    padding-right: $spacing-unit;
+  }
+  td:first-child {
+    font-weight: bold;
+  }
+  .align-center {
+    text-align: center;
+    padding-left: $spacing-unit;
+    padding-right: $spacing-unit;
+  }
+  .align-left {
+    text-align: left;
+  }
+  .align-right {
+    text-align: right;
+    padding-right: $spacing-unit;
+  }
+  .row-bold {
+    font-weight: bold;
+  }
+}
+
+.header-border {
+  border-top: 2px solid black;
+  border-bottom: 3px solid black;
+}
