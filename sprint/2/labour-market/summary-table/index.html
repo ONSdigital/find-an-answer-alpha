@@ -5,7 +5,7 @@ primary-nav: true
 secondary-nav: true
 language-switch: false
 footer: true
-title: "Summary table page"
+title: "Labour market status by age group"
 ---
 
 <main id="main" role="main" tabindex="-1" class="prototype">
@@ -18,10 +18,19 @@ title: "Summary table page"
             <div class="breadcrumb">
               <ol class="breadcrumb__list margin-bottom--0">
                 <li class="breadcrumb__item__white">
-                  <a class="breadcrumb__link astral-link" href="..collection">Crime collection</a>
+                  <a class="breadcrumb__link astral-link" href="https://www.ons.gov.uk/">Home</a>
+                </li>
+                <li class="breadcrumb__item__white">
+                  <a class="breadcrumb__link astral-link" href="https://www.ons.gov.uk/peoplepopulationandcommunity">People, population and community</a>
+                </li>
+                <li class="breadcrumb__item__white">
+                  <a class="breadcrumb__link astral-link" href="https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice">Crime and justice</a>
+                </li>
+                <li class="breadcrumb__item__white">
+                  <a class="breadcrumb__link astral-link" href="../crime-overview">Crime</a>
                 </li>
                 <li class="breadcrumb__item">
-                  Summary table page
+                  Fraud
                 </li>
               </ol>
             </div>
@@ -37,18 +46,36 @@ title: "Summary table page"
     <div class="wrapper">
       <div class="col-wrap">
         <div class="col">
-          <h1 class="margin-bottom--4">{{ page.title }}</h1>
-          <p class="margin-top--1 heading-medium font-weight--normal">Ad mollit labore mollit laborum eu mollit mollit incididunt amet, ullamco nisi laborum commodo ullamco dolor culpa fugiat et ad aute id.</p>
+          <h1 class="margin-bottom--1">{{ page.title }}</h1>
+          <p class="margin-top--1 heading-medium font-weight--normal">Nulla amet non enim sunt dolor dolor Lorem excepteur cupidatat irure consequat.</p>
         </div>
       </div>
     </div>
 
+    <!-- latest panel  -->
     <div class="wrapper">
       <div class="col-wrap">
-        <div class="col release-data">
-          <p class="font-xsmall margin-bottom--4">
-            <span class="font-weight--bold">Release date:</span> 26 April 2018</p>
-            <p class="font-xsmall"><span class="font-weight--bold">This page is part of the latest release</span> | <a class="font-color--white font-xsmall astral-link" href="../collection">View all pages in this release</a>
+        <div class="col">
+          <div class="release-data">
+            <p class="panel panel-small background--0"><span class="font-weight--bold font-xsmall">This page is part of the latest labour market collection</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- release information -->
+    <div class=" border-top--darkastral background--astraldark-transparent">
+      <div class="wrapper">
+        <div class="col-wrap header-meta-wrap">
+          <div class="col col--md-one-third col--lg-one-third header-meta">
+            <p class="font-xxsmall">Release date: 26 April 2018</p>
+          </div>
+          <div class="col col--md-one-third col--lg-one-third header-meta">
+            <p class="font-xxsmall">Release frequency: Quarterly</p>
+          </div>
+          <div class="col col--md-one-third col--lg-one-third header-meta">
+            <p class="font-xxsmall" style="border-right:0;">Next release: September 2018 (provisional)</p>
+          </div>
         </div>
       </div>
     </div>
@@ -60,8 +87,8 @@ title: "Summary table page"
       <div class="col-wrap">
         <div class="col">
 
-          <h2 class="margin-top--3 margin-bottom--0">2(1) Labour market status by age group</h2>
-          <p>United Kingdom (thousands) seasonally adjusted</p>
+          <!-- <h2 class="margin-top--3 margin-bottom--0">Labour market status by age group</h2> -->
+          <p class="font-xxsmall margin-top--4 margin-bottom--1">United Kingdom (thousands) seasonally adjusted</p>
 
           <!-- <table class="table-v2 margin-top--2 margin-bottom--6">
             <tbody>
@@ -89,7 +116,7 @@ title: "Summary table page"
             </tbody>
           </table> -->
 
-        	 <table cellspacing=0 border=0 class="summary-table">
+        	 <table cellspacing=0 border=0 class="summary-table margin-bottom--4">
               <tbody>
             		<tr>
             			<th style="border-bottom:none"></th>
@@ -829,6 +856,17 @@ title: "Summary table page"
             		</tr>
               </tbody>
           	</table>
+
+
+            <!-- end of table -->
+
+            <p class="font-xsmall">Source: Labour Force Survey</p>
+            <h5 class="margin-bottom--1">Download this table</h5>
+            <div class="btn-group margin-bottom--4">
+              <a class="btn btn--primary font-xsmall link--no-underline" href="#">
+                    .XLS
+                </a>
+            </div>
         </div>
       </div>
     </div>
