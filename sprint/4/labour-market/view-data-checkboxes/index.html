@@ -71,43 +71,53 @@ title: "Labour market data"
                   <div class="content-box padding-left-md--1 padding-right-md--1">
 
                     <a class="float-right font-xsmall" style="margin-top:25px;" href="#">
-                      Clear filters
+                      Clear
                     </a>
                     <p class="heading-small">Refine results</p>
 
-                  <div>
-                    <fieldset class="margin-bottom--2">
-                      <div class="padding-bottom--1">
-                        <input type="checkbox" style="transform:scale(1.5)" checked>
-                        <label class="font-small">
-                          Employment
-                        </label>
-                      </div>
-                      <div class="padding-bottom--1">
-                        <input type="checkbox" style="transform:scale(1.5)">
-                        <label class="font-small">
-                          Unemployment
-                        </label>
-                      </div>
-                      <div class="padding-bottom--1">
-                        <input type="checkbox" style="transform:scale(1.5)">
-                        <label class="font-small">
-                          Average weekly earnings
-                        </label>
-                      </div>
-                      <div class="padding-bottom--1">
-                        <input type="checkbox" style="transform:scale(1.5)">
-                        <label class="font-small">
-                          Public and private sector employment
-                        </label>
-                      </div>
-                      <div class="padding-bottom--1">
-                        <input type="checkbox" style="transform:scale(1.5)">
-                        <label class="font-small">
-                          Actual hours worked
-                        </label>
-                      </div>
+                      <fieldset class="margin-bottom--2">
+                        <div class="checkbox-group">
+
+                          <div class="checkbox">
+                            <input type="checkbox" class="checkbox__input js-filter" id="id-All" name="0" value="Employment" checked="Y">
+                            <label class="checkbox__label font-size--16" for="id-All">
+                              Employment
+                            </label>
+                          </div>
+
+                          <div class="checkbox">
+                            <input type="checkbox" class="checkbox__input js-filter" id="id-Female" name="2" value="Unemployment">
+                            <label class="checkbox__label font-size--16" for="id-Female">
+                              Unemployment
+                            </label>
+                          </div>
+
+                          <div class="checkbox">
+                            <input type="checkbox" class="checkbox__input js-filter" id="id-Male" name="1" value="Average weekly earnings">
+                            <label class="checkbox__label font-size--16" for="id-Male">
+                              Average weekly earnings
+                            </label>
+                          </div>
+
+                          <div class="checkbox">
+                            <input type="checkbox" class="checkbox__input js-filter" id="id-Male" name="1" value="Public and private sector employment">
+                            <label class="checkbox__label font-size--16" for="id-Male">
+                              Public and private sector employment
+                            </label>
+                          </div>
+
+                          <div class="checkbox">
+                            <input type="checkbox" class="checkbox__input js-filter" id="id-Male" name="1" value="Actual hours worked">
+                            <label class="checkbox__label font-size--16" for="id-Male">
+                              Actual hours worked
+                            </label>
+                          </div>
+
+                        </div>
                       </fieldset>
+
+
+
 
                       <!-- Free text boxes -->
                       <!-- <div class="padding-bottom--1">
@@ -122,7 +132,7 @@ title: "Labour market data"
                     <div style="padding-bottom:16px;">
                     <input type="search" class="input" value="employment"> -->
 
-                    </div>
+
                   </div>
 
                 <div class="content-box padding-left-md--1 padding-right-md--1">
