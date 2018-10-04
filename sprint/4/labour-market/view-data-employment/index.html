@@ -70,50 +70,69 @@ title: "Labour market data"
                 <div class="col col--md-one-third col--lg-one-third">
                   <div class="content-box padding-left-md--1 padding-right-md--1">
 
-<!-- Checkboxes in the refine by section - turned off for now -->
-                    <!-- <div>
-                      <fieldset>
-                        <legend class="font-medium">
-                          Refine results by
-                        </legend>
-                        <div>
-                          <div>
-                            <input type="checkbox">
-                            <label class="font-small">
-                              Employment
-                            </label>
-                          </div>
-                          <div>
-                            <input type="checkbox">
-                            <label class="font-small">
-                              Unemployment
-                            </label>
-                          </div>
-                          <div>
-                            <input type="checkbox">
-                            <label class="font-small">
-                              Average weekly earnings
-                            </label>
-                          </div>
-                          <div>
-                            <label class="font-small">
-                              Other keyword
-                            </label>
-                            <input type="search">
-                          </div>
-                        </div>
-                      </fieldset>
-                    </div> -->
-
-
-                    <a class="btn btn--primary font-xsmall link--no-underline float-right" style="margin-top:20px;" href="#">
+                    <a class="float-right font-xsmall" style="margin-top:25px;" href="#">
                       Clear
                     </a>
                     <p class="heading-small">Refine results</p>
+
+                      <fieldset class="margin-bottom--2">
+                        <div class="checkbox-group">
+
+                          <div class="checkbox">
+                            <input type="checkbox" class="checkbox__input js-filter" id="id-All" name="0" value="Employment" checked="Y">
+                            <label class="checkbox__label font-size--16" for="id-All">
+                              Employment
+                            </label>
+                          </div>
+
+                          <div class="checkbox">
+                            <input type="checkbox" class="checkbox__input js-filter" id="id-Female" name="2" value="Unemployment">
+                            <label class="checkbox__label font-size--16" for="id-Female">
+                              Unemployment
+                            </label>
+                          </div>
+
+                          <div class="checkbox">
+                            <input type="checkbox" class="checkbox__input js-filter" id="id-Male" name="1" value="Average weekly earnings">
+                            <label class="checkbox__label font-size--16" for="id-Male">
+                              Average weekly earnings
+                            </label>
+                          </div>
+
+                          <div class="checkbox">
+                            <input type="checkbox" class="checkbox__input js-filter" id="id-Male" name="1" value="Public and private sector employment">
+                            <label class="checkbox__label font-size--16" for="id-Male">
+                              Public and private sector employment
+                            </label>
+                          </div>
+
+                          <div class="checkbox">
+                            <input type="checkbox" class="checkbox__input js-filter" id="id-Male" name="1" value="Actual hours worked">
+                            <label class="checkbox__label font-size--16" for="id-Male">
+                              Actual hours worked
+                            </label>
+                          </div>
+
+                        </div>
+                      </fieldset>
+
+
+
+
+                      <!-- Free text boxes -->
+                      <!-- <div class="padding-bottom--1">
+                        <label class="font-small">
+                          Other keyword
+                        </label>
+                        <input type="search">
+                      </div>
+                    </div>
+
                     <p style="margin-bottom:0px">Contains</p>
                     <div style="padding-bottom:16px;">
-                    <input type="search" class="input" value="employment">
-                    </div>
+                    <input type="search" class="input" value="employment"> -->
+
+
                   </div>
 
                 <div class="content-box padding-left-md--1 padding-right-md--1">
@@ -134,7 +153,7 @@ title: "Labour market data"
                           Released on 11 September 2018
                         </font>
                       <p class="font-xsmall margin-bottom--1">Labour market statistics summary data tables</p>
-                      <p class="font-xsmall">Keywords: <strong>employment</strong>, jobs, un<strong>employment</strong>,	claimant count, benefits,	redundancies, economic inactivity, earnings, labour disputes, vacancies</p>
+                      <p class="font-xsmall">Keywords: <strong>employment</strong>, jobs, unemployment,	claimant count, benefits,	redundancies, economic inactivity, earnings, labour disputes, vacancies</p>
                     </li>
                     <li class="margin-bottom--4">
                       <p class="margin-bottom--0"><a class="font-small" href="#">EMP04: <strong>Employment</strong> by occupation</a></p>
