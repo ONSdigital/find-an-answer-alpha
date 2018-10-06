@@ -12,6 +12,18 @@ summary: "Data on levels, distribution and make-up of earnings and hours worked 
 ---
 
 <style>
+
+.meta__image {
+  float: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .meta__image {
+    float: left;
+  }
+}
+
+
 .prototype .header-meta p {
   border-right:none;
 }
@@ -55,9 +67,9 @@ summary: "Data on levels, distribution and make-up of earnings and hours worked 
   <div class="page-intro background--astral">
     <div class="wrapper">
       <div class="col-wrap">
-        <div class="col">
-          <h1 class="margin-bottom--1">{{ page.title }}</h1>
-          <p class="margin-top--1 font-medium">{{ page.summary }}</p>
+        <div class="col col--md-one col--lg-one">
+          <h1 class="font-color--white margin-top-md--2 margin-bottom-sm--2 margin-bottom-md--2">{{ page.title }}</h1>
+          <p class="font-color--white margin-top-sm--2 margin-top-md--2 margin-bottom-sm--3 margin-bottom-md--3 font-medium">{{ page.summary }}</p>
         </div>
       </div>
     </div>
@@ -66,8 +78,9 @@ summary: "Data on levels, distribution and make-up of earnings and hours worked 
     <div class="wrapper">
       <div class="col-wrap">
         <div class="col">
-            <p class="font-xsmall margin-bottom--4">
-              <span class="border-left--matisse background--white padding-left--1 padding-top--1 padding-bottom--1 padding-right--1">This is the latest release. <a href="#" class="font-xsmall">View previous releases</a></span></p>
+          <div style="display: inline-block" class="margin-bottom-sm--3 margin-bottom-md--1 border-left--matisse background--white padding-left--1 padding-top--1 padding-bottom--1 padding-right--1">
+            <p class="font-xsmall margin-bottom--0">This is the latest release. <a href="#" class="font-xsmall">View previous releases</a></span></p>
+            </div>
         </div>
       </div>
     </div>
@@ -75,15 +88,15 @@ summary: "Data on levels, distribution and make-up of earnings and hours worked 
     <!-- release information -->
     <div class="">
       <div class="wrapper">
-        <div class="col-wrap header-meta-wrap">
-          <div class="col col--md-one-quarter col--lg-one-third header-meta">
-            <img class="meta__image" src="{{ "/assets/img/national-statistics.png" | relative_url }}" alt="This is an accredited national statistic">
-            <p class="font-xxsmall"><strong>Contact:</strong><br><a href="#" class="astral-link font-weight--normal font-xxsmall">Roger Smith</a></p>
+        <div class="col-wrap header-meta-wrap margin-bottom-sm--2 margin-bottom-md--1">
+          <div class="col col--md-one-third col--lg-one-third header-meta">
+            <img class="meta__image" src="{{ "/assets/img/national-statistics.png" | relative_url }}" alt="This is an accredited national statistic.">
+            <p class="font-xxsmall"><strong>Contact:</strong><br><a href="#" class="astral-link font-weight--normal font-xxsmall"><span class="visuallyhidden">Email</span> Roger Smith</a></p>
           </div>
-          <div class="col col--md-one-quarter col--lg-one-third header-meta">
+          <div class="col col--md-one-third col--lg-one-third header-meta">
             <p class="font-xxsmall"><strong>Release date:</strong><br>14 August 2018</p>
           </div>
-          <div class="col col--md-one-quarter col--lg-one-third header-meta">
+          <div class="col col--md-one-third col--lg-one-third header-meta">
             <p class="font-xxsmall"><strong>Next release:</strong><br>To be announced</p>
           </div>
         </div>
