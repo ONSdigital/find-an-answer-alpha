@@ -2,8 +2,17 @@
   border: 1px solid $iron;
 }
 
+.border--white {
+  border: 1px solid $white;
+}
+
+
 .border-left--matisse {
   border-left: 7px solid $matisse;
+}
+
+.border-left--carrot {
+  border-left: 7px solid $carrot;
 }
 
 .border-bottom--iron {
