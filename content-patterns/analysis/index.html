@@ -15,7 +15,7 @@ footer: false
       <!-- sticky nav -->
       <div class="col col--md-one-third col--lg-one-third sticky padding-right--1">
         <div class="icon-box-small margin-top--3">
-          <i class="icon icon-return--dark-small"></i><p><a class="font-xsmall" href="../collection">Return to collection page</a></p>
+          <i class="icon icon-return--dark-small"></i><p><a class="font-xsmall" href="../content-patterns"> Return to introduction page</a></p>
         </div>
         <div class="">
           <h2 class="heading-xsmall margin-top--4 margin-bottom--1">On this page:</h2>
@@ -31,13 +31,13 @@ footer: false
           <h2 class="heading-xsmall margin-top--4 margin-bottom--1">Pages in this guide:</h2>
           <ul class="section-contents">
             <li>
-              <a class="font-weight--bold" href="../Introducing">Introducing Bulletin Content Patterns</a>
-            </li>
-            <li>
               <a href="../Bulletins-collections-articles">Bulletins, collections and articles</a>
             </li>
             <li>
               <a href="../headings">Headings</a>
+            </li>
+            <li>
+              <a href="../analysis">Analysis</a>
             </li>
           </ul>
         </div>
@@ -72,6 +72,63 @@ footer: false
       They are the product of working together as a multidisciplinary team that includes content designers, researchers, designers and developers.
       </p>
       <h2></h2>
+
+
+
+            {% include accordian.html %}
+            {% include headline.html %}
+            <h2 id="alerts">Alerts</h2>
+            {% include alerts/standard-alert.html %}
+            <br>
+            {% include alerts/info-alert.html %}
+            {% include alerts/warning-text.html %}
+            {% include alerts/latest-not-latest.html %}
+            {% include back-to-top.html %}
+            <h2 id="breadcrumbs">Breadcrumbs</h2>
+            {% include breadcrumbs.html %}
+            {% include back-to-top.html %}
+            <h2 id="charts">Charts</h2>
+            {% include chart.html %}
+            {% include back-to-top.html %}
+            <h2 id="get-all-data">Get all data</h2>
+            {% include get-all-data.html %}
+            {% include back-to-top.html %}
+            <h2 id="headings">Headings</h2>
+            {% include headings.html %}
+            {% include back-to-top.html %}
+            <h2 id="inset-text">Inset text</h2>
+            {% include inset-text.html %}
+            {% include back-to-top.html %}
+            <h2 id="quote">Quote</h2>
+            {% include quote.html %}
+            {% include back-to-top.html %}
+            <h2 id="related-links">Related links</h2>
+            {% include related-links.html %}
+            {% include back-to-top.html %}
+            <h2 id="related-statistics">Related statistics</h2>
+            {% include related-statistics.html %}
+            {% include back-to-top.html %}
+            <h2 id="small-content-box">Small content box</h2>
+            {% include small-content-box.html %}
+            {% include back-to-top.html %}
+            <h2 id="snapshots">Snapshots</h2>
+            {% include snapshot.html %}
+            {% include back-to-top.html %}
+            <h2>Snapshot 2</h2>
+            {% include snapshot2.html %}
+            {% include back-to-top.html %}
+            <h2 id="tables">Tables</h2>
+            {% include tables/example-01.html %}
+            {% include back-to-top.html %}
+            <h2 id="toggle-content">Toggle content</h2>
+            {% include toggle-content.html %}
+            {% include back-to-top.html %}
+            <h2 id="warning-text">Warning text</h2>
+            {% include warning-text.html %}
+            {% include back-to-top.html %}
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
