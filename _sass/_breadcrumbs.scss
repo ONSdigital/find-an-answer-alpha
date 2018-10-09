@@ -11,7 +11,7 @@
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 16px;
-  padding-bottom: 4px;
+  padding-bottom: 3px;
   line-height: 1.2;
   margin-right: 2px;
 }
@@ -20,17 +20,17 @@
   background-image: url(../assets/img/chevron-icon-white.svg);
 }
 
-.breadcrumb__item:nth-last-child(1), .breadcrumb__item__white:nth-last-child(1) {
+.breadcrumb__item:nth-last-child(2), .breadcrumb__item__white:nth-last-child(2) {
   display: inline;
   background-image: url(../assets/img/chevron-icon-white-left.svg);
 }
 
 .breadcrumb {
   li {
-      font-size: 16px;
+      font-size: 14px;
   }
   a {
-      font-size: 16px;
+      font-size: 14px;
   }
   border-bottom:none;
   padding: 0;
@@ -47,6 +47,11 @@
 
   .breadcrumb__item::after {
     content: none;
+  }
+
+  .breadcrumb__item:nth-last-child(2), .breadcrumb__item__white:nth-last-child(2) {
+    display: inline;
+    background-image: url(../assets/img/chevron-icon-white.svg);
   }
 
   .breadcrumb__item:last-child {
