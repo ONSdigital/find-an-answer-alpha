@@ -17,6 +17,19 @@ summary: "Crimes against households, adults, children, businesses and society in
   max-width: 38em;
 }
 
+.icon-info--info-box {
+    position: absolute;
+    left: -14px;
+    top: 11px;
+  }
+
+@media only screen and (min-width: 768px) {
+  .icon-info--info-box {
+      left: -16px;
+      top: 15px;
+    }
+}
+
 .meta__image {
   float: none;
 }
@@ -35,7 +48,7 @@ summary: "Crimes against households, adults, children, businesses and society in
 
 <main id="main" role="main" tabindex="-1" class="prototype">
   <!-- breadcrumb -->
-  <div id="top" class="page-neutral-intro background--astral">
+  <div id="top" class="page-neutral-intro background--astral print--hide">
     <div class="wrapper">
       <div class="col-wrap">
         <div class="col">
@@ -78,7 +91,7 @@ summary: "Crimes against households, adults, children, businesses and society in
     <div class="wrapper">
       <div class="col-wrap">
         <div class="col">
-          <div style="display: inline-block" class="margin-bottom-sm--2 margin-bottom-md--1 border-left--matisse background--white padding-left--1 padding-top--1 padding-bottom--1 padding-right--1">
+          <div style="display: inline-block" class="print--hide margin-bottom-sm--2 margin-bottom-md--1 border-left--matisse background--white padding-left--1 padding-top--1 padding-bottom--1 padding-right--1">
             <p class="font-small margin-bottom--0 margin-top--0">This is the latest release. <a href="#" class="font-small">View previous releases</a></p>
             </div>
         </div>
@@ -113,7 +126,7 @@ summary: "Crimes against households, adults, children, businesses and society in
 
 <main id="main" role="main" tabindex="-1" class="prototype">
   <!-- breadcrumb -->
-  <div id="top" class="page-neutral-intro background--astral">
+  <div id="top" class="page-neutral-intro background--astral print--hide">
     <div class="wrapper">
       <div class="col-wrap">
         <div class="col">
@@ -156,8 +169,8 @@ summary: "Crimes against households, adults, children, businesses and society in
     <div class="wrapper">
       <div class="col-wrap">
         <div class="col">
-          <div style="display: inline-block" class="margin-bottom-sm--2 margin-bottom-md--1 border-left--carrot background--white padding-left--1 padding-top--1 padding-bottom--1 padding-right--1">
-            <p class="font-xsmall margin-bottom--0">This is not the latest release. <a href="#" class="font-xsmall">View latest release</a></p>
+          <div style="display: inline-block" class="print--hide margin-bottom-sm--2 margin-bottom-md--1 border-left--carrot background--white padding-left--1 padding-top--1 padding-bottom--1 padding-right--1">
+            <p class="font-small margin-bottom--0 margin-top--0">This is not the latest release. <a href="#" class="font-small">View latest release</a></p>
             </div>
         </div>
       </div>
@@ -191,7 +204,7 @@ summary: "Crimes against households, adults, children, businesses and society in
 
 <main id="main" role="main" tabindex="-1" class="prototype">
   <!-- breadcrumb -->
-  <div id="top" class="page-neutral-intro background--astral">
+  <div id="top" class="page-neutral-intro background--astral print--hide">
     <div class="wrapper">
       <div class="col-wrap">
         <div class="col">
@@ -234,8 +247,8 @@ summary: "Crimes against households, adults, children, businesses and society in
     <div class="wrapper">
       <div class="col-wrap">
         <div class="col">
-          <div style="display: inline-block" class="margin-bottom-sm--2 margin-bottom-md--1 border-left--carrot background--white padding-left--1 padding-top--1 padding-bottom--1 padding-right--1">
-            <p class="font-xsmall margin-bottom--0">This is not the latest release. <a href="#" class="font-xsmall">View latest release</a></p>
+          <div style="display: inline-block" class="print--hide margin-bottom-sm--2 margin-bottom-md--1 border-left--carrot background--white padding-left--1 padding-top--1 padding-bottom--1 padding-right--1">
+            <p class="font-small margin-bottom--0 margin-top--0">This is not the latest release. <a href="#" class="font-small">View latest release</a></p>
             </div>
         </div>
       </div>
@@ -244,17 +257,34 @@ summary: "Crimes against households, adults, children, businesses and society in
     <!-- Notice  -->
     <div class="wrapper">
       <div class="col-wrap">
-        <div class="col col--lg-two-thirds">
-          <div class="margin-bottom-sm--2 margin-bottom-md--1 border-left--carrot background--white padding-left--1 padding-top--1 padding-bottom--1 padding-right--1">
-            <details role="group" class="margin-bottom--0 margin-top--0">
-              <summary role="button" aria-controls="details-content-0">
-                <span class="summary font-xsmall link--underline">Notice</span></summary>
-                <div id="details-content-0">
-                  <p class="margin-top--2 font-xsmall">25 January 2018</p>
-                  <p class="margin-top--2 font-xsmall">Table 2 has been amended to remove percentage change figures for the sub-categories 'Domestic Burglary' and 'Non-domestic burglary' as, due to classification changes, it is not meaningful to make comparisons between the latest figures and those from previous years.</p>
-                </div>
-              </details>
-            </div>
+        <div class="col">
+
+          <div class="show-hide show-hide--dark info-box margin-top-sm--2 margin-bottom-sm--3 margin-top-md--3 margin-bottom-md--2 js-show-hide border--white">
+          <div class="js-show-hide__title"><button class="js-show-hide__button" type="button" aria-expanded="false" aria-controls="collapsible-0">
+          <span class="icon icon-info icon-info--info-box"></span>
+          <h2 class="heading-medium font-weight--normal show-hide__title alert--warning__title margin-top--0 margin-bottom--0 padding-left--2">
+          Corrections and notices
+          </h2>
+          </button></div>
+          <div class="js-show-hide__content" id="collapsible-0" aria-hidden="true">
+          <div class="show-hide__content alert--warning__content section__content--markdown">
+          <section>
+          <h3 class="alert--correction__title">Corrections</h3>
+          <p class="alert__date">5 July 2018 13:17</p>
+          <p>ONS identified that the index values and growth rates for the Business Services and Finance sector within the Quarterly National Accounts publication were incorrect. These have now been amended. This correction affects tables B1, R, AA and AE and section 5 of the statistical bulletin.</p><p>The error did not impact any top-level data, so there is no impact on either GDP or Index of Services. </p><p>ONS apologises for any inconvenience this may have caused.</p>
+          <a class="btn btn--tertiary margin-bottom-sm--3 margin-bottom-md--3 print--hide" href="/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/januarytomarch2018/previous/v1">View superseded version</a>
+          </section>
+          </div>
+          <div class="show-hide__content alert--warning__content section__content--markdown">
+          <section>
+          <h3 class="alert--notice__title">Notices</h3>
+          <p class="alert__date">29 June 2018</p>
+          <p>During the final quality assurance of the Blue Book 2018 consistent Quarterly National Accounts dataset an error was discovered in the General Government Final Consumption Expenditure (GGFCE) chained volume measure (CVM). </p><p>The error affects 2005 data, increasing annual GGFCE growth by around 1.7 percentage points from 2.3% to 4.0%. GGFCE in current prices is unaffected. </p><p>There is no impact on headline GDP growth or the GDP implied deflator, as the impact during 2005 would be offset by revisions to the expenditure alignment adjustment.</p><p>The GGFCE CVM series will be corrected and there will be a review of the alignment adjustment in the Blue Book 2019 consistent Quarterly National Accounts dataset. </p>
+          </section>
+          </div>
+          </div>
+          </div>
+
         </div>
       </div>
     </div>
