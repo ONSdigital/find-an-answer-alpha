@@ -7,7 +7,23 @@ secondary-nav: false
 language-switch: false
 footer: false
 ---
+<style>
+.prototype .content-box li{
+  margin-bottom:0px!important;
+}
+.prototype .content-box{
+  overflow: visible;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
+.prototype .content-box h2{
+  margin-top: 0px!important;
+}
+
+
+
+</style>
 <div class="wrapper prototype">
   <div class="col-wrap" style="margin-bottom: 200px;">
 
@@ -21,29 +37,41 @@ footer: false
           <h2 class="heading-xsmall margin-top--4 margin-bottom--1">On this page:</h2>
           <ul class="section-contents">
             <li>
-              <a href="#Headings">Headings</a>
+              <a href="#sections">Writing bulletin sections</a>
+            </li>
+            <li>
+              <a href="#introducing the sections in a bulletin">Introducing the sections in a bulletin</a>
             </li>
             <li>
               <a href="#what-to-write-in-each-section">What to write in each section</a>
             </li>
             <li>
-              <a href="#pages-in-this-collection">Pages in this collection</a>
+              <a href="#pages-in-this-release">Pages in this release</a>
             </li>
           </ul>
 
           <h2 class="heading-xsmall margin-top--4 margin-bottom--1">Pages in this guide:</h2>
           <ul class="section-contents">
             <li>
-              <a href="../Bulletins-collections-articles">Bulletins, collections and articles</a>
+              <a href="../using-content-types">When and how to use content types</a>
             </li>
             <li>
-              <a class="font-weight--bold" href="../headings">Headings</a>
+              <a href="../titling-pages">Titling pages</a>
+            </li>
+            <li>
+              <a class="font-weight--bold" href="../sections">Sections</a>
             </li>
             <li>
               <a href="../analysis">Analysis</a>
             </li>
             <li>
               <a href="../Data">Data</a>
+            </li>
+            <li>
+              <a href="../writing-about-data">Writing about data</a>
+            </li>
+            <li>
+              <a href="../related-links">Related Links</a>
             </li>
           </ul>
         </div>
@@ -53,19 +81,19 @@ footer: false
     <!-- Content -->
 
     <div class="col col--md-two-thirds col--lg-two-thirds">
-      <h1 id="Headings">Headings</h1>
+      <h1 id="Headings">Writing bulletin sections</h1>
           <p>Research shows that our users are most interested in learning about our statistics and analysis of the data.</p>
           <p>Our research has shown that users come to bulletins to complete tasks. Generally, to:</p>
             <li>learn about new data
             <li>access new data
             <li>find out how certain data was collected</p>
             </li>
-          <p>Bulletin headings separate the different types of content on the page to reflect those user needs, helping users to complete their tasks easily.</p>
+          <p>Bulletin sections separate the different types of content on the page to reflect those user needs, helping users to complete their tasks easily.</p>
 
-      <h2>Introducing the sections in a bulletin</h2>
+    <h2 id="introducing the sections in a bulletin">Introducing the sections in a bulletin</h2>
         <p>We use the bulletin topic in each section heading to make it clear what each section is about.</p>
-        <p>For example, on the "Employment" page of the Labour Market collection, the headings would look like this:</p>
-        <div class="content-box">
+        <p>For example, on the "Employment" bulletin of the Labour market release, the headings would look like this:</p>
+        <div class="content-box li-grey">
             <h2 class="heading-xsmall margin-top--4 margin-bottom--1">On this page:</h2>
             <ul class="section-contents">
               <li>
@@ -95,110 +123,96 @@ footer: false
             </ul>
           </div>
 
-    <br>
-    <h3 id="what-to-write-in-each-section">What to write in each section</h3>
-          <table>
-            <tr>
-             <td><strong>Section name</strong>
-             </td>
-             <td><strong>Content focuses on</strong>
-             </td>
-            </tr>
-            <tr>
-             <td>Analysis of employment
-             </td>
-             <td><ul>
-
-          <li>Main statistics
-          <li>Commentary about statistics, including essential warnings</li></ul>
-
-             </td>
-            </tr>
-            <tr>
-             <td>Employment data
-             </td>
-             <td><ul>
-
-          <li>Summary of data referenced in this bulletin, with links
-          <li>Explains what data is available
-          <li>Explains how detailed the data is</li></ul>
-
-             </td>
-            </tr>
-            <tr>
-             <td>Glossary
-             </td>
-             <td><ul>
-
-          <li>Definitions of up to 6 terms used in this bulletin</li></ul>
-
-             </td>
-            </tr>
-            <tr>
-             <td>Measuring this data
-             </td>
-             <td><ul>
-
-          <li>Explains where the data comes from
-          <li>Explains how the data is collected
-          <li>Links to methodology articles, user guides, and roadmap</li></ul>
-
-             </td>
-            </tr>
-            <tr>
-             <td>Strengths and limitations
-             </td>
-             <td><ul>
-
-          <li>Uncertainty about the data
-          <li>How the data should and shouldn't be used
-          <li>Whether any data could be misused
-          <li>Where multiple sources of data are available, which are better for different purposes</li></ul>
-
-             </td>
-            </tr>
-            <tr>
-             <td>Find out more
-             </td>
-             <td><ul>
-
-          <li>Links to more detailed content on this topic, such as technical articles, detailed commentary, or deeper analysis</li></ul>
-
-             </td>
-            </tr>
-            <tr>
-             <td>You may also be interested in
-             </td>
-             <td><ul>
-
-          <li>Links to other, related topics on the ONS website
-          <li>Links to related content from elsewhere</li></ul>
-
-             </td>
-            </tr>
-            <tr>
-             <td>Contact us
-             </td>
-             <td><ul>
-
-          <li>Name, email address, and phone number for the statistical contact</li></ul>
-
-             </td>
-            </tr>
-          </table>
+    <h2 id="what-to-write-in-each-section">What to write in each section</h2>
+    <table>
+        <tr>
+        <td><strong>Heading</strong>
+        </td>
+        <td><strong>Content focuses on</strong>
+        </td>
+        </tr>
+        <tr>
+        <td>Analysis of employment
+        </td>
+        <td>Main statistics
+        </br>
+        </br>
+        Commentary about statistics, including essential warnings
+        </td>
+        </tr>
+        <tr>
+        <td>Employment data
+        </td>
+        <td>Summary of data referenced in this bulletin, with links
+        </br></br>
+        Explains what data is available
+        </br></br>
+        Explains how detailed the data is
+        </td>
+        </tr>
+        <tr>
+        <td>Glossary
+        </td>
+        <td>Definitions of up to six terms used in this bulletin
+        </td>
+        </tr>
+        <tr>
+        <td>Measuring this data
+        </td>
+        <td>Explains where the data comes from
+        </br></br>
+        Explains how the data is collected
+        </br></br>
+        Links to methodology articles, user guides and planned changes
+        </td>
+        </tr>
+        <tr>
+        <td>Strengths and limitations
+        </td>
+        <td>Uncertainty about the data
+        </br></br>
+        How the data should and shouldn't be used
+        </br></br>
+        Whether any data could be misused
+        </br></br>
+        Where multiple sources of data are available, which are better for different purposes
+        </td>
+        </tr>
+        <tr>
+        <td>Find out more
+        </td>
+        <td>Links to more detailed content on this topic, such as technical articles, detailed commentary, or deeper analysis
+        </td>
+        </tr>
+        <tr>
+        <td>You may also be interested in
+        </td>
+        <td>Links to other, related topics on the ONS website
+        </br></br>
+        Links to related content from elsewhere
+        </td>
+        </tr>
+        <tr>
+        <td>Contact us
+        </td>
+        <td>Name, email address, and phone number for the statistical contact
+        </td>
+        </tr>
+        </table>
 
 <br>
 
-<h2 id="pages-in-this-collection">Pages in this collection</h2>
-      <p>Where there’s a user need, we publish a number of bulletins as a “collection”. Users can find their way between these pages using the “Pages in this collection” menu.</p>
+<h2 id="pages-in-this-release">Pages in this release</h2>
+      <p>Where there’s a user need, we publish a number of bulletins as a “release”. Users can find their way between these pages using the “Pages in this release” menu.</p>
       <p>This list of links should:</p>
       <ul>
-        <li>begin with the overview page
+        <li>begin with the overview bulletin
         <li>list the most popular pages first, based on business area understanding to begin with, and using analytics later
         <li>where it makes more sense to group some pages by topic, rather than popularity, do so (employment should be followed by unemployment, for example)</li>
       </ul>
 
-      <p>For example, all pages in the Labour Market collection would include the following links:</p>
+      <p>For example, all pages in the Labour market release would include the following links:</p>
+      <div class="content-box li-grey">
         <h2 class="heading-xsmall margin-top--4 margin-bottom--1">Pages in this collection:</h2>
         <ul class="section-contents">
           <li>
@@ -238,5 +252,7 @@ footer: false
             <a href="#">Vacancies</a>
           </li>
         </ul>
+      </div>
+
 
  <br>
