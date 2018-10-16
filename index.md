@@ -13,3 +13,4 @@ layout: basic
 - [Elements](elements)
 - [Patterns](patterns)
 - [Prototypes](prototypes)
+- [Content-patterns](content-patterns/content-patterns)
