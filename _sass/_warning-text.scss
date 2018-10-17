@@ -2,6 +2,7 @@
   font-size: 16px;
   line-height: 1.31579;
   position: relative;
+  font-weight: 400;
   padding: 10px 0;
   margin-bottom: 24px;
   @media (min-width: 768px){
@@ -11,7 +12,7 @@
 
 .warning-text--small {
   padding: 12px 0;
-  line-height: 1.25;
+  line-height: 24px;
 }
 
 .warning-text__icon {
@@ -25,13 +26,16 @@
   min-height: 38px;
   margin-top: -19px;
   font-size: 1.8em;
-  border: 3px solid #0b0c0c;
+  border: 3px solid $thunder;
   border-radius: 50%;
   color: #fff;
-  background: #0b0c0c;
+  background: $thunder;
   line-height: 29px;
   text-align: center;
   user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .warning-text__text {
@@ -63,6 +67,9 @@
   border: 0;
   white-space: nowrap;
 }
+
+// The following classes are not used in the most recent prototype
+// Keep them here so not to break the older iterations of the prototype
 
 .warning-text__white {
   .warning-text__icon {
