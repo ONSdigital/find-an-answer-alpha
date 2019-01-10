@@ -98,7 +98,7 @@ h3,
 h4,
 h5,
 h6 {
-  padding-top: $spacing-unit*3;
+  padding-top: $spacing-unit*2;
   font-weight: bold;
 }
 
@@ -107,9 +107,9 @@ h6 {
 address,li,p,dl,.btn, summary {
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: $spacing-unit*3;
+  margin-bottom: $spacing-unit*2;
   @media (min-width: 768px) {
-    margin-bottom: $spacing-unit*4;
+    margin-bottom: $spacing-unit*3;
     font-size: 18px;
     line-height: 32px;
   }
@@ -185,9 +185,17 @@ h2 {
   @media (min-width: 768px) {
     font-size: 30px;
     line-height: 40px;
+    padding-top: $spacing-unit*3;
     margin: 32px 0 32px 0;
   }
 }
+
+// h2 + h4 {
+//   margin: 0 0 16px 0;
+//   @media (min-width: 768px) {
+//     margin: 0 0 16px 0;
+//   }
+// }
 
 .font-medium,
 .heading-medium,
@@ -198,7 +206,7 @@ h3 {
   @media (min-width: 768px) {
     font-size: 24px;
     line-height: 32px;
-    margin: 32px 0 32px 0;
+    margin: 32px 0 16px 0;
   }
 }
 
