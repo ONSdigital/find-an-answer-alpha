@@ -184,9 +184,9 @@ title: "Labour market overview"
           <p class="heading-small">Quarterly and annual changes in the number of people in the UK labour market, seasonally adjusted</p>
           <p class="font-small"><a class="chart-table-convert">Change between chart and table</a></p>
 
-          <div id="chart1" class="chart"></div>
+          <div id="chart1"></div>
 
-          <table class="table" style="display: none;">
+          <table id="table" style="display: none;">
             <tbody>
               <tr class="r-21b30b64-3bd4-497e-adb7-463bbc79f15c-1"></tr>
               <tr class="r-21b30b64-3bd4-497e-adb7-463bbc79f15c-2">
@@ -592,9 +592,15 @@ title: "Labour market overview"
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
   $(document).ready(function() {
-        $(".chart-table-convert").click(function() {
-          $(".chart").hide();
-          $(".table").show();
-        });
+    $(".chart-table-convert").click(function() {
+
+      if (document.getElementById('chart1').style.display == 'none') {
+        document.getElementById('chart1').style.display = 'block';
+        document.getElementById('table').style.display = 'none';
+      } else {
+        document.getElementById('chart1').style.display = 'none';
+        document.getElementById('table').style.display = 'block';
+      }
+    });
   });
 </script>
