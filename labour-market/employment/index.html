@@ -199,7 +199,39 @@ title: "Employment and unemployment"
           <p>The following figure shows that more than half of the annual increase in the number of people in employment (313,000) was due to more women in full-time employment (170,000), with the number of men in full-time employment increasing by 101,000 over the year.</p>
 
           <p class="heading-small">Figure 4: Changes in people in employment in the UK between April to June 2017 and April to June 2018, seasonally adjusted</p>
-          <img style="width:100%" src="{{ "/assets/img/charts/Figure-4_lg.jpg" | relative_url }}" class="" alt="">
+
+          <p class="font-small"><a class="chart-table-convert" style="cursor: pointer;">Switch between chart and table</a></p>
+          <div id="chart1"></div>
+
+          <table id="table" style="display: none;">
+            <tbody>
+              <tr class="r-21b30b64-3bd4-497e-adb7-463bbc79f15c-1"></tr>
+              <tr class="r-21b30b64-3bd4-497e-adb7-463bbc79f15c-2">
+                <td style="white-space:pre-wrap;border-top:thin solid black;border-bottom:thin solid black;font-weight:bold;color: black; ">&nbsp;</td>
+                <th scope="row" style="white-space:pre-wrap;text-align:right;border-top:thin solid black;border-bottom:thin solid black;color: black; ">Number (thousands)</th>
+              </tr>
+              <tr class="r-21b30b64-3bd4-497e-adb7-463bbc79f15c-1">
+                <td style="white-space:pre-wrap;text-align:left;color: black;">Men working full-time</td>
+                <td style="white-space:pre-wrap;text-align:right;color: black; ">101</td>
+              </tr>
+              <tr class="r-21b30b64-3bd4-497e-adb7-463bbc79f15c-1">
+                <td style="white-space:pre-wrap;text-align:left;color: black; ">Men working part-time</td>
+                <td style="white-space:pre-wrap;text-align:right;color: black; ">41</td>
+              </tr>
+              <tr class="r-21b30b64-3bd4-497e-adb7-463bbc79f15c-1">
+                <td style="white-space:pre-wrap;text-align:left;color: black; ">Women working full-time</td>
+                <td style="white-space:pre-wrap;text-align:right;color: black; ">170</td>
+              </tr>
+              <tr class="r-21b30b64-3bd4-497e-adb7-463bbc79f15c-1">
+                <td style="white-space:pre-wrap;text-align:left;color: black;">Women working part-time</td>
+                <td style="white-space:pre-wrap;text-align:right; ">2</td>
+              </tr>
+              <tr class="r-21b30b64-3bd4-497e-adb7-463bbc79f15c-1">
+                <td style="white-space:pre-wrap;text-align:left;color: black; ">All in employment</td>
+                <td style="white-space:pre-wrap;text-align:right;color: black;border-top:thin solid black;color: black; ">313</td>
+              </tr>
+            </tbody>
+          </table>
           <p class="font-xsmall">Source: Labour Force Survey, Office for National Statistics</p>
           <h5 class="margin-bottom--1">Download this chart</h5>
           <div class="btn-group margin-bottom--4">
@@ -260,7 +292,7 @@ title: "Employment and unemployment"
               </li>
             </ul>
 
-            <h3>Other data avaliable</h2>
+            <h3>Other data avaliable</h3>
               <ul class="list--neutral padding-left--0">
                 <li class="margin-bottom--4">
                   <p class="margin-bottom--0"><a class="heading-normal" href="#">
@@ -1185,3 +1217,24 @@ title: "Employment and unemployment"
     </div>
   </div>
 </main>
+
+<script type="text/javascript" src="https://pym.nprapps.org/pym.v1.min.js"></script>
+<script>
+  var pymParent = new pym.Parent('chart1', "https://www.ons.gov.uk/embed?uri=/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/uklabourmarket/august2018/a7f3837e", {});
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $(".chart-table-convert").click(function() {
+
+      if (document.getElementById('chart1').style.display == 'none') {
+        document.getElementById('chart1').style.display = 'block';
+        document.getElementById('table').style.display = 'none';
+      } else {
+        document.getElementById('chart1').style.display = 'none';
+        document.getElementById('table').style.display = 'block';
+      }
+    });
+  });
+</script>
