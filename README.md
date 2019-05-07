@@ -10,7 +10,7 @@
 - Run Jekyll
 - Open this repo in a [code editor](https://atom.io/)
 
-Stuck? Ask Benjy for help.
+Stuck? Ask ~Benjy~ Jess for help.
 
 ## License
 
