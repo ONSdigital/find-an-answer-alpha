@@ -7,6 +7,17 @@ language-switch: false
 footer: true
 title: "Death statistics"
 ---
+<style>
+  td {
+    text-align: right;
+  }
+
+  th {
+    text-align: right;
+  }
+
+</style>
+
 <div class="wrapper prototype">
   <div id="top" class="page-neutral-intro">
     <div class="wrapper">
@@ -51,37 +62,27 @@ title: "Death statistics"
       <div class="js-show-hide__title padding-left--0">
         <p class="heading-normal">Deaths from 1956 - 2017</p>
       </div>
-      <div class="js-show-hide__content" style="overflow: auto;">
+      <div class="js-show-hide__content padding-left--0" style="overflow: auto;">
         <div class="padding-bottom--6">
           <div class="wrapper">
             <div class="col-wrap">
               <div class="col">
                 <div class="markdown-table-wrap">
-                  <figure class="figure" id="table-e6590f43">
+                  <figure class="figure">
                     <table class="table">
-                      <colgroup>
-                        <col style="width: 8%">
-                        <col style="width: 17.7%">
-                        <col style="width: 17.7%">
-                        <col style="width: 17.7%">
-                        <col style="width: 12.9%">
-                        <col style="width: 12.9%">
-                        <col style="width: 12.9%">
-                      </colgroup>
                       <thead>
                         <tr class="table__header-row">
-                          <th scope="col" rowspan="2"></th>
-                          <th scope="col" rowspan="2"></th>
-                          <th scope="colgroup" rowspan="3" class="align-center">Deaths (numbers)</th>
-                          <th scope="col" rowspan="2"></th>
-                          <th scope="col" rowspan="2"></th>
-                          <th scope="colgroup" rowspan="3" class="align-center">Crude death rates per 1,000 population</th>
-                          <th scope="col" rowspan="2"></th>
+                          <th scope="col"></th>
+                          <th scope="col"></th>
+                          <th style="text-align:center;">Deaths (numbers)</th>
+                          <th scope="col"></th>
+                          <th scope="col"></th>
+                          <th scope="col" style="text-align:center;">Crude death rates per 1,000 population</th>
+                          <th scope="col"></th>
                         </tr>
 
-
                         <tr class="table__header-row">
-                          <th scope="col"></th>
+                          <th scope="col">Year</th>
                           <th scope="col">Persons</th>
                           <th scope="col">Males</th>
                           <th scope="col">Females</th>
@@ -92,7 +93,7 @@ title: "Death statistics"
                       </thead>
                       <tbody>
                         <tr>
-                          <td>2017</td>
+                          <td class="align-right">2017</td>
                           <td class="align-right">533,253</td>
                           <td class="align-right">262,678</td>
                           <td class="align-right">270,575</td>
@@ -101,7 +102,7 @@ title: "Death statistics"
                           <td class="align-right">9.1</td>
                         </tr>
                         <tr>
-                          <td>2016</td>
+                          <td class="align-right">2016</td>
                           <td class="align-right">525,048</td>
                           <td class="align-right">257,811</td>
                           <td class="align-right">267,237</td>
@@ -667,19 +668,21 @@ title: "Death statistics"
       <div class="js-show-hide__title padding-left--0">
         <p class="heading-normal">Deaths by age groups (2017)</p>
       </div>
-      <div class="js-show-hide__content" style="overflow: auto;">
+      <div class="js-show-hide__content padding-left--0" style="overflow: auto;">
         <div class="padding-bottom--6">
           <div class="wrapper">
             <div class="col-wrap">
               <div class="col">
                 <figure class="figure" id="table-">
                   <table class="table">
-                    <caption class="table__caption">Deaths by age group (2017)</caption>
-                    <tbody>
+                    <thead>
                       <tr class="table__header-row table__nowrap">
                         <th scope="col">Age group</th>
-                        <th scope="colgroup" colspan="3">Deaths (numbers)</th>
-                        <th scope="colgroup" colspan="2">Death rate per 1,000 people</th>
+                        <th scope="col"></th>
+                        <th scope="col">Deaths (numbers)</th>
+                        <th scope="col"></th>
+                        <th scope="col">Death rate per 1,000 people</th>
+                        <th scope="col"></th>
                       </tr>
                       <tr class="table__header-row table__nowrap">
                         <th scope="col"></th>
@@ -689,6 +692,9 @@ title: "Death statistics"
                         <th scope="col">Males</th>
                         <th scope="col">Females</th>
                       </tr>
+                    </thead>
+
+                    <tbody>
                       <tr>
                         <td>0-4</td>
                         <td>3,099</td>
@@ -858,39 +864,47 @@ title: "Death statistics"
   </div>
 
   <!-- Leading causes of death (2017) -->
+
+  <!-- Accordian and title -->
   <div class="js-show-hide padding-top--0">
     <div class="show-hide show-hide--light margin-bottom--2 padding-top--0">
       <div class="js-show-hide__title padding-left--0">
         <p class="heading-normal">Leading causes of death (2017)</p>
       </div>
-      <div class="js-show-hide__content" style="overflow: auto;">
+
+      <!-- Content -->
+      <div class="js-show-hide__content padding-left--0" style="overflow: auto;">
         <div class="padding-bottom--6">
           <div class="wrapper">
             <div class="col-wrap">
               <div class="col">
-
-
-                <figure class="figure" id="table-">
+                <figure>
                   <table class="table">
-                    <caption class="table__caption">Top causes of deaths by age group (2017)</caption>
-                    <tbody>
-                      <tr class="table__header-row table__nowrap">
-                        <th scope="col">All ages</th>
-                        <th scope="col">Deaths</th>
-                        <th scope="col">Percentage of all deaths</th>
+                    <thead>
+                      <tr class="table__header-row">
+                        <th scope="col" rowspan="1" style="width: 300px">Cause</th>
+                        <th scope="col" rowspan="1">Deaths</th>
+                        <th scope="col" rowspan="1">Percentage of all deaths</th>
                       </tr>
+                    </thead>
+
+                    <!-- <tbody> -->
                       <tr>
-                        <td>Dementia and Alzheimer disease</td>
+                        <td style="font-weight: 800; text-align: left;">All ages</td>
+                        <td></td>
+                        <td></td>
+                      <tr>
+                        <td style="width: 300px">Dementia and Alzheimer disease</td>
                         <td>67,641</td>
                         <td>12.7</td>
                       </tr>
                       <tr>
-                        <td>Ischaemic heart diseases</td>
+                        <td style="width: 300px">Ischaemic heart diseases</td>
                         <td>57,923</td>
                         <td>10.9</td>
                       </tr>
                       <tr>
-                        <td>Chronic lower respiratory diseases</td>
+                        <td style="width: 300px">Chronic lower respiratory diseases</td>
                         <td>31,776</td>
                         <td>6</td>
                       </tr>
@@ -909,16 +923,11 @@ title: "Death statistics"
                         <td>533,253</td>
                         <td></td>
                       </tr>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                      </tr>
 
-                      <tr class="table__header-row table__nowrap">
-                        <th scope="col">1-4 Years</th>
-                        <th scope="col">Deaths</th>
-                        <th scope="col"> Percentage of all deaths</th>
+                      <tr>
+                        <td style="font-weight: 800; text-align: left; padding-top: 30px;">1-4 Years</td>
+                        <td></td>
+                        <td></td>
                       </tr>
                       <tr>
                         <td>Congenital malformations, deformations and chromosomal abnormalities</td>
@@ -950,15 +959,11 @@ title: "Death statistics"
                         <td>392</td>
                         <td></td>
                       </tr>
+
                       <tr>
+                        <td style="font-weight: 800; text-align: left; padding-top: 30px;">5-19 Years</td>
                         <td></td>
                         <td></td>
-                        <td></td>
-                      </tr>
-                      <tr class="table__header-row table__nowrap">
-                        <th>5-19 Years</th>
-                        <th>Deaths</th>
-                        <th>Percentage of all deaths</th>
                       </tr>
                       <tr>
                         <td>Suicide and injury/poisoning of undetermined intent</td>
@@ -990,16 +995,13 @@ title: "Death statistics"
                         <td>1,316</td>
                         <td></td>
                       </tr>
+
                       <tr>
-                        <td></td>
+                        <td style="font-weight: 800; text-align: left; padding-top: 30px;">20-34 Years</td>
                         <td></td>
                         <td></td>
                       </tr>
-                      <tr class="table__header-row table__nowrap">
-                        <th>20-34 Years</th>
-                        <th>Deaths</th>
-                        <th>Percentage of all deaths</th>
-                      </tr>
+
                       <tr>
                         <td>Suicide and injury/poisoning of undetermined intent</td>
                         <td>1,096</td>
@@ -1030,17 +1032,14 @@ title: "Death statistics"
                         <td>5,253</td>
                         <td></td>
                       </tr>
+
                       <tr>
-                        <td></td>
+                        <td style="font-weight: 800; text-align: left; padding-top: 30px;">35-49 Years</td>
                         <td></td>
                         <td></td>
                       </tr>
-                      <tr class="table__header-row table__nowrap">
-                        <th>35-49 Years</<th>
-                        </th>
-                        <th>Deaths</th>
-                        <th>Percentage of all deaths</th>
-                      </tr>
+
+
                       <tr>
                         <td>Cirrhosis and other diseases of liver</td>
                         <td>1,613</td>
@@ -1071,16 +1070,13 @@ title: "Death statistics"
                         <td>16,959</td>
                         <td></td>
                       </tr>
+
                       <tr>
-                        <td></td>
+                        <td style="font-weight: 800; text-align: left; padding-top: 30px;">50-64 Years</td>
                         <td></td>
                         <td></td>
                       </tr>
-                      <tr class="table__header-row table__nowrap">
-                        <th>50-64 Years</th>
-                        <th>Deaths</th>
-                        <th>Percentage of all deaths</th>
-                      </tr>
+
                       <tr>
                         <td>Ischaemic heart diseases</td>
                         <td>7,178</td>
@@ -1111,16 +1107,15 @@ title: "Death statistics"
                         <td>16,959</td>
                         <td></td>
                       </tr>
+
+
                       <tr>
-                        <td></td>
+                        <td style="font-weight: 800; text-align: left; padding-top: 30px;">65-79 Years</td>
                         <td></td>
                         <td></td>
                       </tr>
-                      <tr class="table__header-row table__nowrap">
-                        <th>65-79 Years</th>
-                        <th>Deaths</th>
-                        <th>Percentage of all deaths</th>
-                      </tr>
+
+
                       <tr>
                         <td>Ischaemic heart diseases</td>
                         <td>18,712</td>
@@ -1146,16 +1141,13 @@ title: "Death statistics"
                         <td>7,499</td>
                         <td>4.9</td>
                       </tr>
+
                       <tr>
-                        <td></td>
+                        <td style="font-weight: 800; text-align: left; padding-top: 30px;">80+ Years</td>
                         <td></td>
                         <td></td>
                       </tr>
-                      <tr class="table__header-row table__nowrap">
-                        <th>80+ Years</th>
-                        <th>Deaths</th>
-                        <th>Percentage of all deaths</th>
-                      </tr>
+
                       <tr>
                         <td>Dementia and Alzheimer disease</td>
                         <td>59,324</td>
@@ -1181,8 +1173,8 @@ title: "Death statistics"
                         <td>16,091</td>
                         <td>5.4</td>
                       </tr>
-
-                    </tbody>
+<!--
+                    </tbody> -->
                   </table>
                   <footer class="figure__footer">
                   </footer>
@@ -1203,29 +1195,20 @@ title: "Death statistics"
       <div class="js-show-hide__title padding-left--0">
         <p class="heading-normal">Location of deaths (2017)</p>
       </div>
-      <div class="js-show-hide__content" style="overflow: auto;">
+      <div class="js-show-hide__content padding-left--0" style="overflow: auto;">
         <div class="padding-bottom--6">
           <div class="wrapper">
             <div class="col-wrap">
               <div class="col">
                 <figure class="figure" id="table-">
                   <table class="table">
-                    <colgroup>
-                      <col style="width: 8%">
-                      <col style="width: 17.7%">
-                      <col style="width: 17.7%">
-                      <col style="width: 17.7%">
-                      <col style="width: 12.9%">
-                      <col style="width: 12.9%">
-                      <col style="width: 12.9%">
-                    </colgroup>
                     <thead>
                       <tr class="table__header-row">
                         <th scope="col" rowspan="2">Area of usual residence</th>
                         <th scope="col" rowspan="2"></th>
                         <th scope="colgroup" rowspan="3" class="align-center">Deaths (numbers)</th>
                         <th scope="col" rowspan="2"></th>
-                        <th scope="col" rowspan="2"></th>
+                        <th scope="col" rowspan="2">Death rate per 1000 people</th>
                       </tr>
 
                       <tr class="table__header-row">
