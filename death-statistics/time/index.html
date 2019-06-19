@@ -57,10 +57,10 @@ title: "Death statistics over different time periods "
   </div>
 
   <!-- Deaths from 1956 - 2017 -->
-  <div class="js-show-hide padding-top--0">
+  <div id="yearly-deaths" class="js-show-hide padding-top--0" onclick="updateURL(id)">
     <div class="show-hide show-hide--light margin-bottom--2 padding-top--0">
       <div class="js-show-hide__title padding-left--0">
-        <p class="heading-normal">Yearly deaths (1956 - 2017)</p>
+        <p class="heading-normal">Yearly deaths (2010 - 2017)</p>
       </div>
       <div class="js-show-hide__content padding-left--0" style="overflow: auto;">
         <div class="padding-bottom--6">
@@ -164,7 +164,7 @@ title: "Death statistics over different time periods "
                           <td class="align-right">8.7</td>
                           <td class="align-right">9</td>
                         </tr>
-                        <tr>
+                        <!-- <tr>
                           <td>2009</td>
                           <td class="align-right">491,348</td>
                           <td class="align-right">238,062</td>
@@ -649,10 +649,12 @@ title: "Death statistics over different time periods "
                           <td class="align-right">11.7</td>
                           <td class="align-right">12.5</td>
                           <td class="align-right">10.9</td>
-                        </tr>
+                        </tr> -->
                       </tbody>
                     </table><button class="btn btn--secondary btn--mobile-table-hide">Close table</button>
                   </figure>
+                  <!-- <p class="font-xsmall margin-top--3"><a href="https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/datasets/deathsregisteredinenglandandwalesseriesdrreferencetables">Source: Deaths registered in England and Wales (series DR)</a></p> -->
+                  <p class="font-xsmall" style="margin-top: -70px;"><a href="https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/datasets/deathsregisteredinenglandandwalesseriesdrreferencetables">Source: Deaths registered in England and Wales (series DR)</a></p>
                 </div>
               </div>
             </div>
@@ -663,7 +665,7 @@ title: "Death statistics over different time periods "
   </div>
 
   <!-- Monthly deaths by region (January - April 2019) -->
-  <div class="js-show-hide padding-top--0">
+  <div id="monthly-region" class="js-show-hide padding-top--0" onclick="updateURL(id)">
     <div class="show-hide show-hide--light margin-bottom--2 padding-top--0">
       <div class="js-show-hide__title padding-left--0">
         <p class="heading-normal">Monthly deaths by region (January - April 2019)</p>
@@ -3876,9 +3878,7 @@ title: "Death statistics over different time periods "
                   <footer class="figure__footer">
                   </footer>
                 </figure>
-
-
-
+                <p class="font-xsmall margin-top--3"><a href="https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/datasets/monthlyfiguresondeathsregisteredbyareaofusualresidence">Source: Deaths registered monthly in England and Wales</a></p>
               </div>
             </div>
           </div>
@@ -3889,7 +3889,7 @@ title: "Death statistics over different time periods "
   </div>
 
   <!-- Weekly deaths by region (January - May 2019) -->
-  <div class="js-show-hide padding-top--0">
+  <div id="weekly-region" class="js-show-hide padding-top--0" onclick="updateURL(id)">
     <div class="show-hide show-hide--light margin-bottom--2 padding-top--0">
       <div class="js-show-hide__title padding-left--0">
         <p class="heading-normal">Weekly deaths by region (January - May 2019)</p>
@@ -3929,6 +3929,8 @@ title: "Death statistics over different time periods "
                 </tbody></table><footer class="figure__footer">
                 </footer>
                 </figure>
+                <p class="font-xsmall margin-top--3"><a href="https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/datasets/weeklyprovisionalfiguresondeathsregisteredinenglandandwales">Source: Deaths registered weekly in England and Wales, provisional</a></p>
+
 
               </div>
             </div>
@@ -3940,7 +3942,7 @@ title: "Death statistics over different time periods "
   </div>
 
   <!--Weekly deaths by age group January - May 2019 -->
-  <div class="js-show-hide padding-top--0">
+  <div id="weekly-age" class="js-show-hide padding-top--0" onclick="updateURL(id)">
     <div class="show-hide show-hide--light margin-bottom--2 padding-top--0">
       <div class="js-show-hide__title padding-left--0">
         <p class="heading-normal">Weekly deaths by age group (January - May 2019)</p>
@@ -3978,8 +3980,7 @@ title: "Death statistics over different time periods "
                 </tbody></table><footer class="figure__footer">
                 </footer>
                 </figure>
-
-
+                <p class="font-xsmall margin-top--3"><a href="https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/datasets/weeklyprovisionalfiguresondeathsregisteredinenglandandwales">Source: Deaths registered weekly in England and Wales, provisional</a></p>
               </div>
             </div>
           </div>
@@ -3989,7 +3990,7 @@ title: "Death statistics over different time periods "
   </div>
 
   <!--Weekly male deaths by age group January - May 2019 -->
-  <div class="js-show-hide padding-top--0">
+  <div id="weekly-male" class="js-show-hide padding-top--0" onclick="updateURL(id)">
     <div class="show-hide show-hide--light margin-bottom--2 padding-top--0">
       <div class="js-show-hide__title padding-left--0">
         <p class="heading-normal">Weekly male deaths by age group (January - May 2019)</p>
@@ -4027,8 +4028,7 @@ title: "Death statistics over different time periods "
               </tbody></table><footer class="figure__footer">
               </footer>
               </figure>
-
-
+              <p class="font-xsmall margin-top--3"><a href="https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/datasets/weeklyprovisionalfiguresondeathsregisteredinenglandandwales">Source: Deaths registered weekly in England and Wales, provisional</a></p>
               </div>
             </div>
           </div>
@@ -4038,7 +4038,7 @@ title: "Death statistics over different time periods "
   </div>
 
     <!--Weekly female deaths by age group January - May 2019 -->
-  <div class="js-show-hide padding-top--0">
+  <div id="weekly-female" class="js-show-hide padding-top--0" onclick="updateURL(id)">
     <div class="show-hide show-hide--light margin-bottom--2 padding-top--0">
       <div class="js-show-hide__title padding-left--0">
         <p class="heading-normal">Weekly female deaths by age group (January - May 2019)</p>
@@ -4048,7 +4048,6 @@ title: "Death statistics over different time periods "
           <div class="wrapper">
             <div class="col-wrap">
               <div class="col">
-
                 <figure class="figure" id="table-">
                 <table class="table">
                 <!-- <caption class="table__caption">Weekly female deaths by age group (January - May 2019)</caption> -->
@@ -4077,8 +4076,7 @@ title: "Death statistics over different time periods "
                 </tbody></table><footer class="figure__footer">
                 </footer>
                 </figure>
-
-
+                <p class="font-xsmall margin-top--3"><a href="https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/datasets/weeklyprovisionalfiguresondeathsregisteredinenglandandwales">Source: Deaths registered weekly in England and Wales, provisional</a></p>
               </div>
             </div>
           </div>
@@ -4087,6 +4085,14 @@ title: "Death statistics over different time periods "
     </div>
   </div>
 
+  <p class="margin-top--4"><a class="btn btn--primary btn--thick link--no-underline font-weight--bold" href="https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/deaths/datalist?filter=datasets">View all data</a></p>
+
+
 </div>
 
 <script src="//cdn.loop11.com/embed.js" type="text/javascript" async="async"></script>
+<script>
+function updateURL(id) {
+  window.location.hash = id
+}
+</script>
