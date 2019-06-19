@@ -56,14 +56,15 @@ title: "Causes of deaths"
   </div>
 
   <!-- Leading causes of death (2017) -->
-  <div class="js-show-hide padding-top--0">
+  <div id="leading-causes" class="js-show-hide padding-top--0" onclick="updateURL(id)">
     <div class="show-hide show-hide--light margin-bottom--2 padding-top--0">
       <div class="js-show-hide__title padding-left--0">
-        <a href="#leading-causes"><p class="heading-normal">Leading causes of death (2017)</p></a>
+        <p class="heading-normal">Leading causes of death (2017)</p>
       </div>
 
+
       <!-- Content -->
-      <div class="js-show-hide__content padding-left--0" style="overflow: auto;" id="leading-causes">
+      <div class="js-show-hide__content padding-left--0" style="overflow: auto;">
         <div class="padding-bottom--6">
           <div class="wrapper">
             <div class="col-wrap">
@@ -377,15 +378,17 @@ title: "Causes of deaths"
 
       </div>
     </div>
+
   </div>
 
+
   <!-- Deaths from cancers by sex (1994 - 2017) -->
-  <div class="js-show-hide padding-top--0">
+  <div id="cancers" class="js-show-hide padding-top--0" onclick="updateURL(id)">
     <div class="show-hide show-hide--light margin-bottom--2 padding-top--0">
       <div class="js-show-hide__title padding-left--0">
-        <a href="#cancers"><p class="heading-normal">Deaths from cancers by sex (1994 - 2017)</p></a>
+        <p class="heading-normal">Deaths from cancers by sex (1994 - 2017)</p>
       </div>
-      <div class="js-show-hide__content padding-left--0" style="overflow: auto;" id="cancers">
+      <div class="js-show-hide__content padding-left--0" style="overflow: auto;">
         <div class="padding-bottom--6">
           <div class="wrapper">
             <div class="col-wrap">
@@ -1371,14 +1374,14 @@ title: "Causes of deaths"
   </div>
 
   <!-- Deaths from select causes other than cancer by sex (1994 - 2017) -->
-  <div class="js-show-hide padding-top--0">
+  <div id="not-cancer" class="js-show-hide padding-top--0" onclick="updateURL(id)">
     <div class="show-hide show-hide--light margin-bottom--2 padding-top--0">
       <div class="js-show-hide__title padding-left--0">
-        <a href="#not-cancer"><p class="heading-normal">Deaths from select causes other than cancer by sex (1994 - 2017)</p></a>
+        <p class="heading-normal">Deaths from select causes other than cancer by sex (1994 - 2017)</p>
       </div>
 
       <!-- Content -->
-      <div class="js-show-hide__content padding-left--0" style="overflow: auto;" id="not-cancer">
+      <div class="js-show-hide__content padding-left--0" style="overflow: auto;">
         <div class="padding-bottom--6">
           <div class="wrapper">
             <div class="col-wrap">
@@ -2189,12 +2192,12 @@ title: "Causes of deaths"
   </div>
 
   <!--Yearly suicides by sex (1981 - 2016) -->
-  <div class="js-show-hide padding-top--0">
+  <div id="yearly-suicides" class="js-show-hide padding-top--0" onclick="updateURL(id)">
     <div class="show-hide show-hide--light margin-bottom--2 padding-top--0">
       <div class="js-show-hide__title padding-left--0">
-        <a href="#yearly-suicides"><p class="heading-normal">Yearly suicides by sex (1981 - 2016)</p></a>
+        <p class="heading-normal">Yearly suicides by sex (1981 - 2016)</p>
       </div>
-      <div class="js-show-hide__content padding-left--0" style="overflow: auto;" id="yearly-suicides">
+      <div class="js-show-hide__content padding-left--0" style="overflow: auto;">
         <div class="padding-bottom--6">
           <div class="wrapper">
             <div class="col-wrap">
@@ -2562,12 +2565,12 @@ title: "Causes of deaths"
   </div>
 
   <!--Yearly suicides by location (2014 - 2016) -->
-  <div class="js-show-hide padding-top--0">
+  <div id="suicide-location" class="js-show-hide padding-top--0" onclick="updateURL(id)">
     <div class="show-hide show-hide--light margin-bottom--2 padding-top--0">
       <div class="js-show-hide__title padding-left--0">
-        <a href="#suicide-location"><p class="heading-normal">Yearly suicides by location (2014 - 2016)</p></a>
+        <p class="heading-normal">Yearly suicides by location (2014 - 2016)</p>
       </div>
-      <div class="js-show-hide__content padding-left--0" style="overflow: auto;" id="suicide-location">
+      <div class="js-show-hide__content padding-left--0" style="overflow: auto;">
         <div class="padding-bottom--6">
           <div class="wrapper">
             <div class="col-wrap">
@@ -2628,12 +2631,12 @@ title: "Causes of deaths"
   </div>
 
   <!--Excessive winter deaths (1950-2018)-->
-  <div class="js-show-hide padding-top--0">
+  <div id="winter" class="js-show-hide padding-top--0" onclick="updateURL(id)">
     <div class="show-hide show-hide--light margin-bottom--2 padding-top--0">
       <div class="js-show-hide__title padding-left--0">
-        <a href="#winter"><p class="heading-normal">Excessive winter deaths (1950-2018)</p></a>
+        <p class="heading-normal">Excessive winter deaths (1950-2018)</p>
       </div>
-      <div class="js-show-hide__content padding-left--0" style="overflow: auto;" id="winter">
+      <div class="js-show-hide__content padding-left--0" style="overflow: auto;">
         <div class="padding-bottom--6">
           <div class="wrapper">
             <div class="col-wrap">
@@ -2726,9 +2729,14 @@ title: "Causes of deaths"
     </div>
   </div>
 
-    <p class="margin-top--4"><a class="btn btn--primary btn--thick link--no-underline font-weight--bold" href="https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/causesofdeath/datalist">View all data</a></p>
+  <p class="margin-top--4"><a class="btn btn--primary btn--thick link--no-underline font-weight--bold" href="https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/causesofdeath/datalist">View all data</a></p>
 
 </div>
 
 
 <script src="//cdn.loop11.com/embed.js" type="text/javascript" async="async"></script>
+<script>
+function updateURL(id) {
+  window.location.hash = id
+}
+</script>
